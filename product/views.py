@@ -1,19 +1,18 @@
 from django.http import HttpResponse, Http404
 from django.shortcuts import render
+from product import models
 
 
 # Create your views here.
 def index(request):
-    context = {'title': 'Products'}
+    context = {'title': 'Main Page'}
     return render(request, 'product/index.html', context=context)
 
 
 def products(request):
     context = {'title': 'Products',
-               'products': [
-                   {'id': '1', 'name': 'Product1', 'description': 'About Product1', 'price': '1000', 'image': '...'},
-                   {'id': '2', 'name': 'Product2', 'description': 'About Product2', 'price': '1000', 'image': '...'},
-                   {'id': '3', 'name': 'Product3', 'description': 'About Product3', 'price': '1000', 'image': '...'}, ]
+               'products': models.PhoneProduct.objects.all(),
+               'categories': models.PhoneCategory.objects.all(),
                }
     return render(request, 'product/products.html', context=context)
 
