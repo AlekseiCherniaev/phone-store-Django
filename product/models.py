@@ -17,6 +17,13 @@ class PhoneProduct(models.Model):
     category = models.ForeignKey(PhoneCategory, on_delete=models.CASCADE)
     image = models.ImageField(upload_to='product/static/product/img', null=True, blank=True)
     quantity = models.PositiveIntegerField(default=0)
+    slug = models.SlugField(max_length=120, unique=True, db_index=True)
 
     def __str__(self):
         return self.name
+
+    class Meta:
+        ordering = ['name']
+        indexes = [
+            models.Index(fields=['name'])
+        ]

@@ -1,6 +1,7 @@
-from django.http import HttpResponse, Http404
-from django.shortcuts import render
+from django.http import HttpResponse, Http404, HttpResponseNotFound
+from django.shortcuts import render, redirect, get_object_or_404
 from product import models
+from product.models import PhoneProduct
 
 
 # Create your views here.
@@ -20,13 +21,18 @@ def products(request):
 def products_for_year(request, year):
     if year > 2025:
         raise Http404()
+        # return redirect('index')
     context = {'title': f'Products for {year}'}
     return HttpResponse('Products for year ' + str(year))
 
 
-def product(request, num):
-    return HttpResponse(f'Product ' + str(num))
+def product(request, product_slug):
+    pr = get_object_or_404(PhoneProduct, slug=product_slug)
+    context = {'title': f'Product' + str(pr.name),
+               'product': pr,
+               }
+    return render(request, 'product/product_slug.html', context)
 
 
 def handler404(request, exception):
-    return HttpResponse('Page not found :(')
+    return HttpResponseNotFound('Page not found :(')

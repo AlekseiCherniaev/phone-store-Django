@@ -5,7 +5,7 @@
     {% include 'product/includes/menu.html' %}
     <ul>
         {% for product in products %}
-            <li><a href="{% url 'product' num=forloop.counter %}">{{ product.name }}</a>
+            <li><a href="{% url 'product' product_slug=product.slug %}">{{ product.name }}</a>
                 <p>{{ product.description }}</p>
                 <p><img src="{% static product.image.url %}" width='400' height='300' alt="{{ product.name }}"></p>
                 <p>{{ product.price }}</p></li>
