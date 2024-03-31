@@ -12,10 +12,18 @@ def index(request):
 
 def products(request):
     context = {'title': 'Products',
-               'products': models.PhoneProduct.objects.all(),
+               'products': models.PhoneProduct.phone_objects.all(),
                'categories': models.PhoneCategory.objects.all(),
                }
     return render(request, 'product/products.html', context=context)
+
+
+def category(request, category_slug):
+    cat = get_object_or_404(models.PhoneCategory, slug=category_slug)
+    context = {'title': f'Product' + str(cat.name),
+               'category': cat,
+               }
+    return render(request, 'product/category.html', context=context)
 
 
 def products_for_year(request, year):
