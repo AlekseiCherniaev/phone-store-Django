@@ -14,6 +14,7 @@ def products(request):
     context = {'title': 'Products',
                'products': models.PhoneProduct.phone_objects.all(),
                'categories': models.PhoneCategory.objects.all(),
+               'tags': models.PhoneTag.objects.all(),
                }
     return render(request, 'product/products.html', context=context)
 
