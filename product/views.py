@@ -2,6 +2,7 @@ from django.http import HttpResponse, Http404, HttpResponseNotFound
 from django.shortcuts import render, redirect, get_object_or_404
 from product import models
 from product.models import PhoneProduct
+from product import forms
 
 
 # Create your views here.
@@ -41,6 +42,27 @@ def product(request, product_slug):
                'product': pr,
                }
     return render(request, 'product/product_slug.html', context)
+
+
+def add_product(request):
+    if request.method == 'POST':
+        form = forms.AddProductForm(request.POST)
+        print(form)
+        if form.is_valid():
+            try:
+                PhoneProduct.objects.create(**form.cleaned_data)
+                data = form.cleaned_data
+                print(data)
+                return redirect('index')
+            except:
+                print('Something went wrong')
+                form.add_error(None, 'Error adding product')
+    else:
+        form = forms.AddProductForm()
+    context = {'title': f'Product adding',
+               'form': form,
+               }
+    return render(request, 'product/add_product.html', context=context)
 
 
 def handler404(request, exception):

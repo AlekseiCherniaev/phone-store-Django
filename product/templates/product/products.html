@@ -9,13 +9,21 @@
             <li><a href="{{ cat.get_absolute_url }}">{{ cat.name }}</a></li>
         </ul>
     {% endfor %}
+    {% for tag in tags %}
+        <button name="Tag">{{ tag.tag }}</button>
+    {% endfor %}
+
+    <p><a href='{% url 'add_product' %}'>Add your phone here</a></p>
+
     <ul>
         {% for product in products %}
             <li><a href="{{ product.get_absolute_url }}">{{ product.name }}</a>
                 <p>{{ product.description }}</p>
-                <p><img src="{% static product.image.url %}" width='400' height='300' alt="{{ product.name }}"></p>
-                <p>{{ product.price }}</p></li>
+                {% if product.image %}
+                    <p><img src="{% static product.image.url %}" width='400' height='300' alt="{{ product.name }}"></p>
+                {% endif %}
 
+                <p>{{ product.price }}</p></li>
         {% endfor %}
     </ul>
     <p><a href='{% url 'products_for_year' year=2024 %}'>See all products for 2024</a></p>

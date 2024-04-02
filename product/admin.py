@@ -10,13 +10,17 @@ class PhoneProductAdmin(admin.ModelAdmin):
     list_editable = 'price',
     list_per_page = 5
     actions = ['set_quantity_1']
-
+    search_fields = ['name']
+    list_filter = ['category__name']
+    prepopulated_fields = {'slug': ('name',)}
     @admin.display(description='Описание')
     def brief_info(self, obj):
         return obj.description
 
+    @admin.action(description='Изменить кол-во на 0')
     def set_quantity_1(self, request, queryset):
-        queryset.update(quantity=1)
+        count = queryset.update(quantity=0)
+        self.message_user(request, f'Изменено {count} записей')
 
 
 @admin.register(models.PhoneCategory)
