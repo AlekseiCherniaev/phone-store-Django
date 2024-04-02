@@ -1,0 +1,11 @@
+{% extends 'product/base.html' %}
+{% load static %}
+{% block content %}
+    <p>{{ category.name }}</p>
+    {% for cat in category.products.all %}
+        <p>{{ cat.name }}</p>
+        <p>{{ cat.description }}</p>
+        <p>{{ cat.price }}</p>
+        <p><img src="{% static cat.image.url %}" alt="Phone image" width="400" height="250"></p>
+    {% endfor %}
+{% endblock %}
