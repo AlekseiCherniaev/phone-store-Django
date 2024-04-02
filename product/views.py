@@ -12,6 +12,7 @@ def index(request):
 
 
 def products(request):
+
     context = {'title': 'Products',
                'products': models.PhoneProduct.phone_objects.all(),
                'categories': models.PhoneCategory.objects.all(),
@@ -46,17 +47,10 @@ def product(request, product_slug):
 
 def add_product(request):
     if request.method == 'POST':
-        form = forms.AddProductForm(request.POST)
-        print(form)
+        form = forms.AddProductForm(request.POST, request.FILES)
         if form.is_valid():
-            try:
-                PhoneProduct.objects.create(**form.cleaned_data)
-                data = form.cleaned_data
-                print(data)
-                return redirect('index')
-            except:
-                print('Something went wrong')
-                form.add_error(None, 'Error adding product')
+            form.save()
+            return redirect('index')
     else:
         form = forms.AddProductForm()
     context = {'title': f'Product adding',

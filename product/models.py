@@ -30,7 +30,7 @@ class PhoneProduct(models.Model):
     price = models.DecimalField(max_digits=6, decimal_places=2, verbose_name='Цена')
     category = models.ForeignKey(PhoneCategory, on_delete=models.PROTECT, related_name='products',
                                  verbose_name='Категория')
-    image = models.ImageField(upload_to='product/static/product/img', null=True, blank=True, verbose_name='Изображение')
+    image = models.ImageField(upload_to='photos/', null=True, blank=True, verbose_name='Изображение')
     quantity = models.IntegerField(default=0, verbose_name='Количество')
     slug = models.SlugField(max_length=120, unique=True, db_index=True, verbose_name='Слаг')
     tag = models.ManyToManyField('PhoneTag', blank=True, related_name='tags', verbose_name='Тэг')
