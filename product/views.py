@@ -1,7 +1,9 @@
 from django.http import HttpResponse, Http404, HttpResponseNotFound
 from django.shortcuts import render, redirect, get_object_or_404
+from django.views import View
+
 from product import models
-from product.models import PhoneProduct
+from product.models import PhoneProduct, PhoneTag
 from product import forms
 
 
@@ -12,11 +14,21 @@ def index(request):
 
 
 def products(request):
+    # list of selected tags
+    tags_list = []
+    for tag in PhoneTag.objects.all():
+        if tag.tag in request.GET:
+            tags_list.append(tag.tag)
+    # if none of tags are selected or all are selected
+    if len(tags_list) == 0 or len(tags_list) == models.PhoneTag.objects.count():
+        products_ = models.PhoneProduct.phone_objects.all()
+    else:
+        products_ = models.PhoneProduct.objects.filter(tag__tag__in=tags_list).distinct()
 
     context = {'title': 'Products',
-               'products': models.PhoneProduct.phone_objects.all(),
+               'products': products_,
                'categories': models.PhoneCategory.objects.all(),
-               'tags': models.PhoneTag.objects.all(),
+               'tags': PhoneTag.objects.all(),
                }
     return render(request, 'product/products.html', context=context)
 
@@ -57,6 +69,25 @@ def add_product(request):
                'form': form,
                }
     return render(request, 'product/add_product.html', context=context)
+
+
+class AddProduct(View):
+    def get(self, request):
+        form = forms.AddProductForm()
+        context = {'title': f'Product adding',
+                   'form': form,
+                   }
+        return render(request, 'product/add_product.html', context=context)
+
+    def post(self, request):
+        form = forms.AddProductForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
+            return redirect('index')
+        context = {'title': f'Product adding',
+                   'form': form,
+                   }
+        return render(request, 'product/add_product.html', context=context)
 
 
 def handler404(request, exception):
