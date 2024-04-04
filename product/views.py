@@ -1,3 +1,4 @@
+from django.contrib.auth.mixins import LoginRequiredMixin
 from django.http import HttpResponse, Http404, HttpResponseNotFound
 from django.shortcuts import render, redirect, get_object_or_404
 from django.urls import reverse, reverse_lazy
@@ -157,7 +158,7 @@ class ProductView(DetailView):
         return get_object_or_404(PhoneProduct.phone_objects, slug=self.kwargs[self.slug_url_kwarg])
 
 
-class AddProduct(DataMixin, CreateView):
+class AddProduct(LoginRequiredMixin, DataMixin, CreateView):
     template_name = 'product/add_product.html'
     form_class = forms.AddProductForm
     success_url = reverse_lazy('index')

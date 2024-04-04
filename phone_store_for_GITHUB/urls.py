@@ -7,6 +7,7 @@ from phone_store_for_GITHUB import settings
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('product.urls')),
+    path('user/', include('user.urls', namespace='user')),
     path("__debug__/", include("debug_toolbar.urls")),
 ]
 

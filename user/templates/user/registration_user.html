@@ -1,0 +1,18 @@
+{% extends 'product/base.html' %}
+{% block content %}
+    <p>Register here</p>
+    <form method="post">
+        {% csrf_token %}
+        <div class="form-errors">{{ form.non_field_errors }}</div>
+        {% for f in form %}
+            <p>
+                <label class="form-label" for="{{ f.id_for_label }}">{{ f.label }}</label>
+                {{ f }}
+                {{ f.errors }}
+            </p>
+        {% endfor %}
+        <p>
+            <button type="submit">Register!</button>
+        </p>
+    </form>
+{% endblock %}
