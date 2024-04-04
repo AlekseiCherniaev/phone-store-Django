@@ -1,9 +1,12 @@
+from django.contrib.auth import get_user_model
+from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.auth.views import LoginView
 from django.shortcuts import render
 from django.urls import reverse_lazy
-from django.views.generic import CreateView
+from django.views.generic import CreateView, UpdateView
 
 from user import forms
+from user.forms import ProfileForm
 
 
 class LoginUser(LoginView):
@@ -39,3 +42,16 @@ class UserRegister(CreateView):
     extra_context = {'title': 'Register'}
     template_name = 'user/registration_user.html'
     success_url = reverse_lazy('user:login')
+
+
+class ProfileView(LoginRequiredMixin, UpdateView):
+    template_name = 'user/profile_user.html'
+    extra_context = {'title': 'Profile'}
+    model = get_user_model()
+    form_class = forms.ProfileForm
+
+    def get_success_url(self):
+        return reverse_lazy('user:profile')
+
+    def get_object(self, queryset=None):
+        return self.request.user

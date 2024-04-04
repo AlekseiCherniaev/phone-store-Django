@@ -2,7 +2,7 @@
     <a href='{% url 'index' %}'>Main Page</a> |
     <a href='{% url 'products' %}'>See Products</a> |
     {% if user.is_authenticated %}
-        {{ user.username }} |
+        <a href="{% url 'user:profile' %}">{{ user.username }}</a> |
         <form method="post" action="{% url 'user:logout' %}" style="display: inline-block;">
             {% csrf_token %}
             <button type="submit">Logout</button>
