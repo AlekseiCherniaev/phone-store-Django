@@ -9,14 +9,50 @@
             <li><a href="{{ cat.get_absolute_url }}">{{ cat.name }}</a></li>
         </ul>
     {% endfor %}
+    <form action="" enctype="multipart/form-data" method="get">
+        {% for tag in tags %}
+            <label for="{{ tag }}"><input formmethod='get' type='checkbox' name="{{ tag.tag }}"/>{{ tag }}</label>
+
+        {% endfor %}
+        <p>
+            <button type="submit">Apply filters</button>
+        </p>
+    </form>
+    <p><a href='{% url 'add_product' %}'>Add your phone here</a></p>
+
     <ul>
         {% for product in products %}
             <li><a href="{{ product.get_absolute_url }}">{{ product.name }}</a>
                 <p>{{ product.description }}</p>
-                <p><img src="{% static product.image.url %}" width='400' height='300' alt="{{ product.name }}"></p>
+                {% if product.image %}
+                    <p><img src="{{ product.image.url }}" width='400' height='300' alt="{{ product.name }}"></p>
+                {% endif %}
                 <p>{{ product.price }}</p></li>
-
         {% endfor %}
     </ul>
     <p><a href='{% url 'products_for_year' year=2024 %}'>See all products for 2024</a></p>
+
+    {% if page_obj.has_other_pages %}
+        <nav class="list-pages">
+            <ul>
+            {% if page_obj.has_previous %}
+                <li class="page-num"><a href="?{% for key, value in request.GET.items %}{% if key != 'page' %}{{ key }}={{ value }}&{% endif %}{% endfor %}page={{ page_obj.previous_page_number }}">&lt;</a>
+                        </li>
+            {% endif %}
+                {% for p in paginator.page_range %}
+                    {% if page_obj.number == p %}
+                        <li class="page-num page-selected"><a href="?{% for key, value in request.GET.items %}{% if key != 'page' %}{{ key }}={{ value }}&{% endif %}{% endfor %}page={{ p }}">Текущая {{ p }}</a>
+                        </li>
+                    {% elif p >= page_obj.number|add:-2 and p <= page_obj.number|add:2 %}
+                        <li class="page-num"><a href="?{% for key, value in request.GET.items %}{% if key != 'page' %}{{ key }}={{ value }}&{% endif %}{% endfor %}page={{ p }}">{{ p }}</a>
+                        </li>
+                    {% endif %}
+                {% endfor %}
+            {% if page_obj.has_next %}
+                <li class="page-num"><a href="?{% for key, value in request.GET.items %}{% if key != 'page' %}{{ key }}={{ value }}&{% endif %}{% endfor %}page={{ page_obj.next_page_number }}">&gt;</a>
+                        </li>
+            {% endif %}
+            </ul>
+        </nav>
+    {% endif %}
 {% endblock %}

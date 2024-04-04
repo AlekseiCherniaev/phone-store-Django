@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django_extensions',
     'product',
+    'user',
     "debug_toolbar",
 ]
 
@@ -122,8 +123,19 @@ STATICFILES_DIRS = [BASE_DIR]
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+MEDIA_ROOT = BASE_DIR / 'media'
+MEDIA_URL = '/media/'
+
 INTERNAL_IPS = [
     # ...
     "127.0.0.1",
     # ...
 ]
+
+LOGIN_URL = 'user:login'
+LOGOUT_REDIRECT_URL = 'index'
+LOGIN_REDIRECT_URL = 'products'
+
+AUTHENTICATION_BACKENDS = ['django.contrib.auth.backends.ModelBackend',
+                           'user.authentication.EmailAuthBackend',
+                           ]
