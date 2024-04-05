@@ -132,6 +132,8 @@ LOGIN_URL = 'user:login'
 LOGOUT_REDIRECT_URL = 'index'
 LOGIN_REDIRECT_URL = 'products'
 
+AUTH_USER_MODEL = 'user.User'
+
 AUTHENTICATION_BACKENDS = ['django.contrib.auth.backends.ModelBackend',
                            'user.authentication.EmailAuthBackend',
                            ]
@@ -147,3 +149,5 @@ EMAIL_USE_SSL = True
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 SERVER_EMAIL = EMAIL_HOST_USER
 EMAIL_ADMIN = EMAIL_HOST_USER
+
+DEFAULT_USER_PHOTO = MEDIA_URL + 'profile_photo/default_photo.jpg'

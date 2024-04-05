@@ -3,12 +3,17 @@
 {% block content %}
     {% include 'product/includes/menu.html' %}
     <h2>Profile</h2>
-    <form method="post">
+    <form method="post" enctype="multipart/form-data">
         {% csrf_token %}
         {% for f in form %}
-            <p><label class="form-label" for="{{ f.id_for_label }}">{{ f.label }}: </label>{{ f }}{{ f.errors }}</p>
+            <p><label class="form-label" for="{{ f.id_for_label }}">{{ f.label }}: </label>{{ f }}
+                {% if f == form.image %}
+                    <p><img src="{{ user.image.url }}" alt='image' width="120" height="140">
+                {% endif %}{{ f.errors }}</p>
         {% endfor %}
-        <p><button type="submit">Save</button></p>
+        <p>
+            <button type="submit">Save</button>
+        </p>
         <p><a href="{% url 'user:password_change' %}">Change password</a></p>
     </form>
 {% endblock %}

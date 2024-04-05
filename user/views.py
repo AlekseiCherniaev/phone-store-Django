@@ -5,6 +5,7 @@ from django.shortcuts import render
 from django.urls import reverse_lazy
 from django.views.generic import CreateView, UpdateView
 
+from phone_store_for_GITHUB import settings
 from user import forms
 from user.forms import ProfileForm
 
@@ -46,7 +47,8 @@ class UserRegister(CreateView):
 
 class ProfileView(LoginRequiredMixin, UpdateView):
     template_name = 'user/profile_user.html'
-    extra_context = {'title': 'Profile'}
+    extra_context = {'title': 'Profile',
+                     'default_photo': settings.DEFAULT_USER_PHOTO}
     model = get_user_model()
     form_class = forms.ProfileForm
 
@@ -62,5 +64,3 @@ class UserPasswordChangeView(PasswordChangeView):
     extra_context = {'title': 'Password Reset'}
     form = forms.ChangePasswordForm
     success_url = reverse_lazy('user:profile')
-
-

@@ -15,10 +15,11 @@ class UserForm(AuthenticationForm):
 class ProfileForm(forms.ModelForm):
     username = forms.CharField(label='Login', widget=forms.TextInput(attrs={'class': 'form-input'}), disabled=True)
     email = forms.CharField(label='Email', widget=forms.TextInput(attrs={'class': 'form-input'}), disabled=True)
+    image = forms.ImageField(label='Image', widget=forms.FileInput(attrs={'class': "form-input"}))
 
     class Meta:
         model = get_user_model()
-        fields = ('username', 'email', 'first_name', 'last_name')
+        fields = ('username', 'image', 'date_of_birth', 'email', 'first_name', 'last_name')
         labels = {
             'username': 'Username',
             'email': 'Email',
