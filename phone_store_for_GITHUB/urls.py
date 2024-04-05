@@ -16,5 +16,5 @@ if settings.DEBUG:
 
 handler404 = 'product.views.handler404'
 
-admin.site.site_header = 'Панель администрировния'
+admin.site.site_header = 'Панель администрирования'
 admin.site.index_title = 'Телефоны для продажи'

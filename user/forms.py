@@ -1,6 +1,6 @@
 from django import forms
 from django.contrib.auth import get_user_model
-from django.contrib.auth.forms import AuthenticationForm, UserCreationForm
+from django.contrib.auth.forms import AuthenticationForm, UserCreationForm, PasswordChangeForm
 
 
 class UserForm(AuthenticationForm):
@@ -54,3 +54,9 @@ class UserRegistrationForm(UserCreationForm):
         if get_user_model().objects.filter(email=email).exists():
             raise forms.ValidationError('Email already exists')
         return email
+
+
+class ChangePasswordForm(PasswordChangeForm):
+    old_password = forms.CharField(label='Old Password', widget=forms.PasswordInput(attrs={'class': 'form-change'}))
+    password1 = forms.CharField(label='Password', widget=forms.PasswordInput(attrs={'class': 'form-change'}))
+    password2 = forms.CharField(label='Password again', widget=forms.PasswordInput(attrs={'class': 'form-change'}))

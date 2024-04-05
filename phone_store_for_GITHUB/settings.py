@@ -24,7 +24,7 @@ SECRET_KEY = 'django-insecure-8cgz-=!beidwyuq^!_7hugz9#b)90ei)et@y#-%%ru!a+@lr$*
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1']
 
 # Application definition
 
@@ -126,11 +126,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 MEDIA_ROOT = BASE_DIR / 'media'
 MEDIA_URL = '/media/'
 
-INTERNAL_IPS = [
-    # ...
-    "127.0.0.1",
-    # ...
-]
+INTERNAL_IPS = ["127.0.0.1"]
 
 LOGIN_URL = 'user:login'
 LOGOUT_REDIRECT_URL = 'index'
@@ -139,3 +135,15 @@ LOGIN_REDIRECT_URL = 'products'
 AUTHENTICATION_BACKENDS = ['django.contrib.auth.backends.ModelBackend',
                            'user.authentication.EmailAuthBackend',
                            ]
+EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
+
+EMAIL_HOST = "smtp.yandex.ru"
+
+EMAIL_PORT = 465
+EMAIL_HOST_PASSWORD = 'fqebsqbwoxchbpjk'
+EMAIL_HOST_USER = 'alekseycherniaev@yandex.by'
+EMAIL_USE_SSL = True
+
+DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
+SERVER_EMAIL = EMAIL_HOST_USER
+EMAIL_ADMIN = EMAIL_HOST_USER
