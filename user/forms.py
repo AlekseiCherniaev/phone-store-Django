@@ -1,6 +1,6 @@
 from django import forms
 from django.contrib.auth import get_user_model
-from django.contrib.auth.forms import AuthenticationForm, UserCreationForm
+from django.contrib.auth.forms import AuthenticationForm, UserCreationForm, PasswordChangeForm
 
 
 class UserForm(AuthenticationForm):
@@ -10,6 +10,22 @@ class UserForm(AuthenticationForm):
     class Meta:
         model = get_user_model()
         fields = ('username', 'password')
+
+
+class ProfileForm(forms.ModelForm):
+    username = forms.CharField(label='Login', widget=forms.TextInput(attrs={'class': 'form-input'}), disabled=True)
+    email = forms.CharField(label='Email', widget=forms.TextInput(attrs={'class': 'form-input'}), disabled=True)
+    image = forms.ImageField(label='Image', widget=forms.FileInput(attrs={'class': "form-input"}))
+
+    class Meta:
+        model = get_user_model()
+        fields = ('username', 'image', 'date_of_birth', 'email', 'first_name', 'last_name')
+        labels = {
+            'username': 'Username',
+            'email': 'Email',
+            'first_name': 'First Name',
+            'last_name': 'Last Name',
+        }
 
 
 class UserRegistrationForm(UserCreationForm):
@@ -39,3 +55,9 @@ class UserRegistrationForm(UserCreationForm):
         if get_user_model().objects.filter(email=email).exists():
             raise forms.ValidationError('Email already exists')
         return email
+
+
+class ChangePasswordForm(PasswordChangeForm):
+    old_password = forms.CharField(label='Old Password', widget=forms.PasswordInput(attrs={'class': 'form-change'}))
+    password1 = forms.CharField(label='Password', widget=forms.PasswordInput(attrs={'class': 'form-change'}))
+    password2 = forms.CharField(label='Password again', widget=forms.PasswordInput(attrs={'class': 'form-change'}))

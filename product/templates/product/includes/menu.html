@@ -2,7 +2,9 @@
     <a href='{% url 'index' %}'>Main Page</a> |
     <a href='{% url 'products' %}'>See Products</a> |
     {% if user.is_authenticated %}
-        {{ user.username }} |
+        <a href="{% url 'user:profile' %}">{{ user.username }}
+            <img src="{{ user.image.url }}" alt="image" width="50" height="50">
+        </a> |
         <form method="post" action="{% url 'user:logout' %}" style="display: inline-block;">
             {% csrf_token %}
             <button type="submit">Logout</button>
@@ -11,7 +13,7 @@
             | <a href='/admin/'>Admin Panel</a>
         {% endif %}
     {% else %}
-        | <a href='{% url 'user:login' %}'>Login</a> |
+        <a href='{% url 'user:login' %}'>Login</a> |
         <a href='{% url 'user:register' %}'>Registration</a>
 
     {% endif %}
