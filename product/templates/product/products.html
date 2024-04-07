@@ -1,8 +1,8 @@
-{% extends 'product/base.html' %}
+{% extends 'base/base.html' %}
 {% load static %}
 {% block content %}
     <h2>Welcome officer to products!</h2>
-    {% include 'product/includes/menu.html' %}
+    {% include 'includes/menu.html' %}
     <p>See products for category</p>
     {% for cat in categories %}
         <ul>
@@ -29,16 +29,14 @@
                 {% endif %}
                 <p>{{ product.price }}</p></li>
             {% if user.is_authenticated %}
-                <form method="post" action="{% url 'user:add_to_basket' product.id %}">
-                    {% csrf_token %}
+                <form method="get" action="{% url 'user:add_to_basket' product.id %}">
                     <button type="submit">Add to basket</button>
                 </form>
+
 
             {% endif %}
         {% endfor %}
     </ul>
-    <p><a href='{% url 'products_for_year' year=2024 %}'>See all products for 2024</a></p>
-
     {% if page_obj.has_other_pages %}
         <nav class="list-pages">
             <ul>

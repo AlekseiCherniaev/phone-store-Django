@@ -94,12 +94,6 @@ class ProductForCategory(DetailView):
         return get_object_or_404(models.PhoneCategory.objects, slug=self.kwargs[self.slug_url_kwarg])
 
 
-def products_for_year(request, year):
-    if year > 2025:
-        raise Http404()
-        # return redirect('index')
-    context = {'title': f'Products for {year}'}
-    return HttpResponse('Products for year ' + str(year))
 
 
 # def product(request, product_slug):

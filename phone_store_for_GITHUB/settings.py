@@ -78,9 +78,17 @@ WSGI_APPLICATION = 'phone_store_for_GITHUB.wsgi.application'
 
 DATABASES = {
 
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.sqlite3',
+    #     'NAME': BASE_DIR / 'db.sqlite3',
+    # }
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'phone_site_db',
+        'USER': 'phone_site',
+        'PASSWORD': '230423',
+        'HOST': 'localhost',
+        'PORT': 5432,
     }
 }
 

@@ -1,0 +1,850 @@
+[
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2024-04-05T20:16:17.435Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "3",
+    "object_repr": "Apple1",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2024-04-05T20:20:25.848Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "1",
+    "object_repr": "lenovo",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2024-04-05T20:31:15.966Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "1",
+    "object_repr": "lenovo",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2024-04-05T20:31:59.401Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "2",
+    "object_repr": "len",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2024-04-05T20:35:48.289Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "2",
+    "object_repr": "len",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2024-04-05T20:37:36.995Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "3",
+    "object_repr": "lenovo123",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2024-04-05T20:37:37.007Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "2",
+    "object_repr": "len",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2024-04-05T20:44:31.102Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "1",
+    "object_repr": "lenovo",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\", \"Email address\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2024-04-05T20:50:42.856Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "1",
+    "object_repr": "lenovo",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2024-04-05T21:15:38.607Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "3",
+    "object_repr": "lenovo1234",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2024-04-05T21:15:38.618Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "2",
+    "object_repr": "lenovo123",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 12,
+  "fields": {
+    "action_time": "2024-04-05T21:19:58.631Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "5",
+    "object_repr": "lenovo1234",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 13,
+  "fields": {
+    "action_time": "2024-04-05T21:19:58.643Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "4",
+    "object_repr": "lenovo123",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 1,
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": 1,
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 2,
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": 1,
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 3,
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": 1,
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 4,
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": 1,
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 5,
+  "fields": {
+    "name": "Can add permission",
+    "content_type": 2,
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 6,
+  "fields": {
+    "name": "Can change permission",
+    "content_type": 2,
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 7,
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": 2,
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 8,
+  "fields": {
+    "name": "Can view permission",
+    "content_type": 2,
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 9,
+  "fields": {
+    "name": "Can add group",
+    "content_type": 3,
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 10,
+  "fields": {
+    "name": "Can change group",
+    "content_type": 3,
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 11,
+  "fields": {
+    "name": "Can delete group",
+    "content_type": 3,
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 12,
+  "fields": {
+    "name": "Can view group",
+    "content_type": 3,
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 13,
+  "fields": {
+    "name": "Can add content type",
+    "content_type": 4,
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 14,
+  "fields": {
+    "name": "Can change content type",
+    "content_type": 4,
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 15,
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": 4,
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 16,
+  "fields": {
+    "name": "Can view content type",
+    "content_type": 4,
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 17,
+  "fields": {
+    "name": "Can add session",
+    "content_type": 5,
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 18,
+  "fields": {
+    "name": "Can change session",
+    "content_type": 5,
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 19,
+  "fields": {
+    "name": "Can delete session",
+    "content_type": 5,
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 20,
+  "fields": {
+    "name": "Can view session",
+    "content_type": 5,
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 21,
+  "fields": {
+    "name": "Can add Категория",
+    "content_type": 6,
+    "codename": "add_phonecategory"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 22,
+  "fields": {
+    "name": "Can change Категория",
+    "content_type": 6,
+    "codename": "change_phonecategory"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 23,
+  "fields": {
+    "name": "Can delete Категория",
+    "content_type": 6,
+    "codename": "delete_phonecategory"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 24,
+  "fields": {
+    "name": "Can view Категория",
+    "content_type": 6,
+    "codename": "view_phonecategory"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 25,
+  "fields": {
+    "name": "Can add Тэг",
+    "content_type": 7,
+    "codename": "add_phonetag"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 26,
+  "fields": {
+    "name": "Can change Тэг",
+    "content_type": 7,
+    "codename": "change_phonetag"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 27,
+  "fields": {
+    "name": "Can delete Тэг",
+    "content_type": 7,
+    "codename": "delete_phonetag"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 28,
+  "fields": {
+    "name": "Can view Тэг",
+    "content_type": 7,
+    "codename": "view_phonetag"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 29,
+  "fields": {
+    "name": "Can add Телефоны",
+    "content_type": 8,
+    "codename": "add_phoneproduct"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 30,
+  "fields": {
+    "name": "Can change Телефоны",
+    "content_type": 8,
+    "codename": "change_phoneproduct"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 31,
+  "fields": {
+    "name": "Can delete Телефоны",
+    "content_type": 8,
+    "codename": "delete_phoneproduct"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 32,
+  "fields": {
+    "name": "Can view Телефоны",
+    "content_type": 8,
+    "codename": "view_phoneproduct"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 33,
+  "fields": {
+    "name": "Can add user",
+    "content_type": 9,
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 34,
+  "fields": {
+    "name": "Can change user",
+    "content_type": 9,
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 35,
+  "fields": {
+    "name": "Can delete user",
+    "content_type": 9,
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 36,
+  "fields": {
+    "name": "Can view user",
+    "content_type": 9,
+    "codename": "view_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 37,
+  "fields": {
+    "name": "Can add basket",
+    "content_type": 10,
+    "codename": "add_basket"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 38,
+  "fields": {
+    "name": "Can change basket",
+    "content_type": 10,
+    "codename": "change_basket"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 39,
+  "fields": {
+    "name": "Can delete basket",
+    "content_type": 10,
+    "codename": "delete_basket"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 40,
+  "fields": {
+    "name": "Can view basket",
+    "content_type": 10,
+    "codename": "view_basket"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 1,
+  "fields": {
+    "app_label": "admin",
+    "model": "logentry"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 2,
+  "fields": {
+    "app_label": "auth",
+    "model": "permission"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 3,
+  "fields": {
+    "app_label": "auth",
+    "model": "group"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 4,
+  "fields": {
+    "app_label": "contenttypes",
+    "model": "contenttype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 5,
+  "fields": {
+    "app_label": "sessions",
+    "model": "session"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 6,
+  "fields": {
+    "app_label": "product",
+    "model": "phonecategory"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 7,
+  "fields": {
+    "app_label": "product",
+    "model": "phonetag"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 8,
+  "fields": {
+    "app_label": "product",
+    "model": "phoneproduct"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 9,
+  "fields": {
+    "app_label": "user",
+    "model": "user"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 10,
+  "fields": {
+    "app_label": "product",
+    "model": "basket"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "kddbsxegbx9pf0d6iwenckwc3k5re91f",
+  "fields": {
+    "session_data": ".eJxVjLEOwjAMRP8lM4qaJm1tRna-obJrhxRQKjXthPh3iNQBlhvuvbuXGWnf0rgXXcdZzNk4c_rtmKaH5grkTvm22GnJ2zqzrYo9aLHXRfR5Ody_g0Ql1XXjOSjo5AAc9j46jBp4kDiAcNuDbwgZJXjPrcPmG5FQoEXfUadg3h_ktTe1:1rtOrz:JonrNgBBqpQSUArW3j0s5XQHU0-dh3OPgxPBbR53qLE",
+    "expire_date": "2024-04-21T09:31:23.489Z"
+  }
+},
+{
+  "model": "product.phonecategory",
+  "pk": 1,
+  "fields": {
+    "name": "Lenovo",
+    "description": "Lenovo phone",
+    "slug": "Lenovo-1"
+  }
+},
+{
+  "model": "product.phonecategory",
+  "pk": 2,
+  "fields": {
+    "name": "Sony",
+    "description": "Sony phones",
+    "slug": "Sony-2"
+  }
+},
+{
+  "model": "product.phonecategory",
+  "pk": 3,
+  "fields": {
+    "name": "Apple",
+    "description": "Apple phones",
+    "slug": "Apple-3"
+  }
+},
+{
+  "model": "product.phonecategory",
+  "pk": 4,
+  "fields": {
+    "name": "Sumsung",
+    "description": "Sumsung phones",
+    "slug": "Sumsung-4"
+  }
+},
+{
+  "model": "product.phoneproduct",
+  "pk": 1,
+  "fields": {
+    "name": "Lenovo1",
+    "description": "Lenovo1 phone",
+    "price": "1234.12",
+    "category": 1,
+    "image": "photos/first_phone_huawei_eNa53aR.jpg",
+    "quantity": 0,
+    "slug": "Lenovo1",
+    "tag": [
+      2
+    ]
+  }
+},
+{
+  "model": "product.phoneproduct",
+  "pk": 2,
+  "fields": {
+    "name": "Lenovo2",
+    "description": "Lenovo2 phone",
+    "price": "1234.23",
+    "category": 1,
+    "image": "photos/second_phone_huawei_oGpxVL5.jpg",
+    "quantity": 2,
+    "slug": "Lenovo2",
+    "tag": []
+  }
+},
+{
+  "model": "product.phoneproduct",
+  "pk": 3,
+  "fields": {
+    "name": "Apple1",
+    "description": "Apple1 phone",
+    "price": "4567.12",
+    "category": 3,
+    "image": "photos/first_image_phone_apple_tN827f5_d5TQ0yC.jpg",
+    "quantity": 2,
+    "slug": "Apple1",
+    "tag": [
+      4,
+      3
+    ]
+  }
+},
+{
+  "model": "product.phoneproduct",
+  "pk": 4,
+  "fields": {
+    "name": "Sumsung1",
+    "description": "Sumsung1 phone",
+    "price": "5678.54",
+    "category": 4,
+    "image": "photos/first_phone_Samsung_1Yea0B3.png",
+    "quantity": 1,
+    "slug": "Sumsung1",
+    "tag": [
+      1,
+      2
+    ]
+  }
+},
+{
+  "model": "product.phoneproduct",
+  "pk": 5,
+  "fields": {
+    "name": "Sumsung2",
+    "description": "Sumsung2 phone",
+    "price": "3456.23",
+    "category": 4,
+    "image": "photos/second_phone_samsung_l0tFPA2.jpg",
+    "quantity": 1,
+    "slug": "Sumsung2",
+    "tag": [
+      1
+    ]
+  }
+},
+{
+  "model": "product.phoneproduct",
+  "pk": 6,
+  "fields": {
+    "name": "Sony1",
+    "description": "Sony1 phone",
+    "price": "2345.23",
+    "category": 2,
+    "image": "photos/first_phone_huawei_eNa53aR_wRJsgmC.jpg",
+    "quantity": 4,
+    "slug": "Sony1",
+    "tag": [
+      4,
+      1,
+      2
+    ]
+  }
+},
+{
+  "model": "product.phoneproduct",
+  "pk": 7,
+  "fields": {
+    "name": "Sony2",
+    "description": "Sony2 phone",
+    "price": "5000.23",
+    "category": 2,
+    "image": "photos/third_phone_huawei_n68r8FZ.jpg",
+    "quantity": 5,
+    "slug": "Sony2",
+    "tag": [
+      1
+    ]
+  }
+},
+{
+  "model": "product.phonetag",
+  "pk": 1,
+  "fields": {
+    "tag": "4k",
+    "slug": "4k-1"
+  }
+},
+{
+  "model": "product.phonetag",
+  "pk": 2,
+  "fields": {
+    "tag": "FullHD",
+    "slug": "FullHD-2"
+  }
+},
+{
+  "model": "product.phonetag",
+  "pk": 3,
+  "fields": {
+    "tag": "FastCharge",
+    "slug": "FastCharge-3"
+  }
+},
+{
+  "model": "product.phonetag",
+  "pk": 4,
+  "fields": {
+    "tag": "120Fps",
+    "slug": "120Fps-4"
+  }
+},
+{
+  "model": "product.basket",
+  "pk": 23,
+  "fields": {
+    "product": 3,
+    "user": 6,
+    "quantity": 2
+  }
+},
+{
+  "model": "user.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$720000$ISea0vkH2MzCAbZxgJVEEs$XAZPH73t2SBxwstxHhEhXTBnwIIAkGnWdrSi7zZ0miY=",
+    "last_login": "2024-04-07T09:31:23.418Z",
+    "is_superuser": true,
+    "username": "lenovo",
+    "first_name": "",
+    "last_name": "",
+    "email": "cherniaevaleksey2304@gmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2024-04-05T20:11:34Z",
+    "image": "media/profile_photo/third_phone_huawei_n68r8FZ.jpg",
+    "date_of_birth": null,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "user.user",
+  "pk": 6,
+  "fields": {
+    "password": "pbkdf2_sha256$720000$0dtdGdoVCZFbaITmYDSDyP$Wq+ST+O+yLqvpaNvIf1UDCXhMmGtHN53+ReZyFktTNI=",
+    "last_login": "2024-04-07T09:29:31.361Z",
+    "is_superuser": false,
+    "username": "lenovo123",
+    "first_name": "Alex",
+    "last_name": "Vegiof",
+    "email": "dudkenebcjskekek@gmail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2024-04-05T21:22:00.844Z",
+    "image": "/media/profile_photo/default_photo.jpg",
+    "date_of_birth": null,
+    "groups": [],
+    "user_permissions": []
+  }
+}
+]

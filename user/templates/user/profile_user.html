@@ -1,8 +1,9 @@
-{% extends 'product/base.html' %}
+{% extends 'base/base.html' %}
 
 {% block content %}
-    {% include 'product/includes/menu.html' %}
     <h2>Profile</h2>
+    {% include 'includes/menu.html' %}
+    
     <form method="post" enctype="multipart/form-data">
         {% csrf_token %}
         {% for f in form %}

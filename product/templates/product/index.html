@@ -1,6 +1,8 @@
-{% extends 'product/base.html' %}
+{% extends 'base/base.html' %}
 {% load static %}
 {% block content %}
-    <h2>Welcome officer!</h2>
-    {% include 'product/includes/menu.html' %}
-{% endblock %}
+    {% include 'includes/menu.html' %}
+    <h2 class="roboto-medium">Store</h2>
+    <p>New phones and best prices in our Store. Free worldwide phone shipping! </p>
+    <a href="{% url 'products' %}">Start shopping!</a>
+{% endblock %}  
