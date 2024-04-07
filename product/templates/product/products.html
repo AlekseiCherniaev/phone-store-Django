@@ -1,63 +1,105 @@
 {% extends 'base/base.html' %}
 {% load static %}
 {% block content %}
-    <h2>Welcome officer to products!</h2>
     {% include 'includes/menu.html' %}
-    <p>See products for category</p>
-    {% for cat in categories %}
-        <ul>
-            <li><a href="{{ cat.get_absolute_url }}">{{ cat.name }}</a></li>
-        </ul>
-    {% endfor %}
-    <form action="" enctype="multipart/form-data" method="get">
-        {% for tag in tags %}
-            <label for="{{ tag }}"><input formmethod='get' type='checkbox' name="{{ tag.tag }}"/>{{ tag }}</label>
-
+    <div class="text-center">
+        <h2 class="my-4">Select category</h2>
+    </div>
+    <div class="row">
+        {% for cat in categories %}
+            <div class="col-md-3">
+                <div class="card mb-4">
+                    <div class="card-body d-flex flex-column align-items-center">
+                        <h5 class="card-title text-center">{{ cat.name }}</h5>
+                        <a href="{{ cat.get_absolute_url }}" class="btn btn-primary justify-content-center">See All
+                            Products</a>
+                    </div>
+                </div>
+            </div>
         {% endfor %}
-        <p>
-            <button type="submit">Apply filters</button>
-        </p>
-    </form>
+    </div>
+
+    {% if user.is_superuser %}
     <p><a href='{% url 'add_product' %}'>Add your phone here</a></p>
-
-    <ul>
-        {% for product in products %}
-            <li><a href="{{ product.get_absolute_url }}">{{ product.name }}</a>
-                <p>{{ product.description }}</p>
-                {% if product.image %}
-                    <p><img src="{{ product.image.url }}" width='400' height='300' alt="{{ product.name }}"></p>
-                {% endif %}
-                <p>{{ product.price }}</p></li>
-            {% if user.is_authenticated %}
-                <form method="get" action="{% url 'user:add_to_basket' product.id %}">
-                    <button type="submit">Add to basket</button>
-                </form>
-
-
-            {% endif %}
-        {% endfor %}
-    </ul>
-    {% if page_obj.has_other_pages %}
-        <nav class="list-pages">
-            <ul>
-                {% if page_obj.has_previous %}
-                    <li class="page-num"><a href="?{% for key, value in request.GET.items %}{% if key != 'page' %}{{ key }}={{ value }}&{% endif %}{% endfor %}page={{ page_obj.previous_page_number }}">&lt;</a>
-                    </li>
-                {% endif %}
-                {% for p in paginator.page_range %}
-                    {% if page_obj.number == p %}
-                        <li class="page-num page-selected"><a href="?{% for key, value in request.GET.items %}{% if key != 'page' %}{{ key }}={{ value }}&{% endif %}{% endfor %}page={{ p }}">Текущая {{ p }}</a>
-                        </li>
-                    {% elif p >= page_obj.number|add:-2 and p <= page_obj.number|add:2 %}
-                        <li class="page-num"><a href="?{% for key, value in request.GET.items %}{% if key != 'page' %}{{ key }}={{ value }}&{% endif %}{% endfor %}page={{ p }}">{{ p }}</a>
-                        </li>
-                    {% endif %}
-                {% endfor %}
-                {% if page_obj.has_next %}
-                    <li class="page-num"><a href="?{% for key, value in request.GET.items %}{% if key != 'page' %}{{ key }}={{ value }}&{% endif %}{% endfor %}page={{ page_obj.next_page_number }}">&gt;</a>
-                    </li>
-                {% endif %}
-            </ul>
-        </nav>
     {% endif %}
+
+    <form action="" enctype="multipart/form-data" method="get" class="ml-2">
+    <h2>Filters</h2>
+    <div class="row">
+        {% for tag in tags %}
+        <div class="col-md-6 mb-2">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="{{ tag.tag }}" id="{{ tag.tag }}">
+                <label class="form-check-label" for="{{ tag.tag }}">
+                    {{ tag }}
+                </label>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    <p>
+        <button type="submit" class="btn btn-primary">Apply filters</button>
+        <a href="{% url 'products' %}" class="btn btn-secondary">Reset filters</a>
+    </p>
+</form>
+
+
+    <div class="row">
+    {% for product in products %}
+        <div class="col-md-6">
+            <div class="card mb-3">
+                <div class="card-body">
+                    <a href="{{ product.get_absolute_url }}">{{ product.name }}</a>
+                    <p class="mb-1 text-truncate" style="max-height: 1.2em; line-height: 1.2em; overflow: hidden;">{{ product.description }}</p>
+                    {% if product.image %}
+                        <img src="{{ product.image.url }}" width="170" height="170" alt="{{ product.name }}" class="img-fluid mb-1">
+                    {% endif %}
+                    <p class="mb-0">{{ product.price }}</p>
+                    {% if user.is_authenticated %}
+                        <form method="get" action="{% url 'user:add_to_basket' %}">
+                            <button type="submit" class="btn btn-primary btn-sm" name="product_id" value="{{ product.id }}">Add to basket</button>
+                        </form>
+                    {% else %}
+                        <form method="get" action="{% url 'user:login' %}">
+                            <button type="submit" class="btn btn-primary btn-sm" name="product_id" value="{{ product.id }}">Add to basket</button>
+                        </form>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+</div>
+
+
+   {% if page_obj.has_other_pages %}
+    <nav class="list-pages d-flex justify-content-center">
+        <ul class="pagination">
+            {% if page_obj.has_previous %}
+                <li class="page-item">
+                    <a class="page-link" href="?
+                        {% for key, value in request.GET.items %}{% if key != 'page' %}{{ key }}={{ value }}&{% endif %}{% endfor %}page={{ page_obj.previous_page_number }}">&lt;</a>
+                </li>
+            {% endif %}
+            {% for p in paginator.page_range %}
+                {% if page_obj.number == p %}
+                    <li class="page-item active">
+                        <a class="page-link" href="?{% for key, value in request.GET.items %}{% if key != 'page' %}{{ key }}={{ value }}&{% endif %}{% endfor %}page={{ p }}">{{ p }} <span class="sr-only"></span></a>
+                    </li>
+                {% elif p >= page_obj.number|add:-2 and p <= page_obj.number|add:2 %}
+                    <li class="page-item">
+                        <a class="page-link" href="?{% for key, value in request.GET.items %}{% if key != 'page' %}{{ key }}={{ value }}&{% endif %}{% endfor %}page={{ p }}">{{ p }}</a>
+                    </li>
+                {% endif %}
+            {% endfor %}
+            {% if page_obj.has_next %}
+                <li class="page-item">
+                    <a class="page-link" href="?{% for key, value in request.GET.items %}{% if key != 'page' %}{{ key }}={{ value }}&{% endif %}{% endfor %}page={{ page_obj.next_page_number }}">&gt;</a>
+                </li>
+            {% endif %}
+        </ul>
+    </nav>
+{% endif %}
+
+
+
 {% endblock %}

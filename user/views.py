@@ -73,9 +73,9 @@ class UserPasswordChangeView(PasswordChangeView):
     success_url = reverse_lazy('user:profile')
 
 
-def add_to_basket(request, product_id):
+def add_to_basket(request):
+    product_id = request.GET.get('product_id')
     product = models.PhoneProduct.objects.get(pk=product_id)
-
     if models.Basket.objects.filter(user=request.user, product=product).exists():
         basket = models.Basket.objects.get(user=request.user, product=product)
         basket.quantity += 1

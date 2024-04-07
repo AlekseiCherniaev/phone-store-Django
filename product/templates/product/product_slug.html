@@ -5,6 +5,6 @@
     {% include 'includes/menu.html' %}
     <p>{{ product.name }}</p>
     <p>{{ product.description }}</p>
-    <p><img src="{% static product.image.url %}" alt="Phone image" width="400" height="250"></p>
+    <p><img src="{{ product.image.url }}" width="150px" height="150px" alt="{{ product.name }}" class="img-fluid mb-1"></p>
     <p>{{ product.price }}</p>
 {% endblock %}

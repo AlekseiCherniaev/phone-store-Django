@@ -51,7 +51,7 @@ class AllProductsPageView(ListView):
     template_name = 'product/products.html'
     model = models.PhoneProduct
     context_object_name = 'products'
-    paginate_by = 3
+    paginate_by = 4
     extra_context = {'title': 'Products',
                      'categories': models.PhoneCategory.objects.all(),
                      'tags': PhoneTag.objects.all(),

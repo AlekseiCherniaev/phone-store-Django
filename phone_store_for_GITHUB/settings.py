@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/5.0/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.0/ref/settings/
 """
-
+import os.path
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -25,6 +25,8 @@ SECRET_KEY = 'django-insecure-8cgz-=!beidwyuq^!_7hugz9#b)90ei)et@y#-%%ru!a+@lr$*
 DEBUG = True
 
 ALLOWED_HOSTS = ['localhost', '127.0.0.1']
+
+INTERNAL_IPS = ["127.0.0.1"]
 
 # Application definition
 
@@ -76,6 +78,7 @@ WSGI_APPLICATION = 'phone_store_for_GITHUB.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
+# POSTGRESQL
 DATABASES = {
 
     # 'default': {
@@ -125,17 +128,19 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
 STATIC_URL = 'static/'
-STATICFILES_DIRS = [BASE_DIR]
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+# MEDIA
+
 MEDIA_ROOT = BASE_DIR / 'media'
 MEDIA_URL = '/media/'
-
-INTERNAL_IPS = ["127.0.0.1"]
+DEFAULT_USER_PHOTO = MEDIA_URL + 'profile_photo/default_photo.jpg'
+# AUTHENTICATION
 
 LOGIN_URL = 'user:login'
 LOGOUT_REDIRECT_URL = 'index'
@@ -143,9 +148,12 @@ LOGIN_REDIRECT_URL = 'products'
 
 AUTH_USER_MODEL = 'user.User'
 
+# ADDED AUTH THROUGH EMAIL
+
 AUTHENTICATION_BACKENDS = ['django.contrib.auth.backends.ModelBackend',
                            'user.authentication.EmailAuthBackend',
                            ]
+
 EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
 
 EMAIL_HOST = "smtp.yandex.ru"
@@ -158,5 +166,3 @@ EMAIL_USE_SSL = True
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 SERVER_EMAIL = EMAIL_HOST_USER
 EMAIL_ADMIN = EMAIL_HOST_USER
-
-DEFAULT_USER_PHOTO = MEDIA_URL + 'profile_photo/default_photo.jpg'

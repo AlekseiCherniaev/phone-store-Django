@@ -13,7 +13,7 @@ urlpatterns = [
     path('password-change/', views.UserPasswordChangeView.as_view(), name='password_change'),
     path('register/', views.UserRegister.as_view(), name='register'),
 
-    path('add-to-basket/<int:product_id>/', views.add_to_basket, name='add_to_basket'),
+    path('add-to-basket/', views.add_to_basket, name='add_to_basket'),
     path('delete-from-basket/<int:product_id>/', views.delete_from_basket, name='delete_from_basket'),
 
     path('password-reset/',
