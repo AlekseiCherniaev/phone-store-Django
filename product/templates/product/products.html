@@ -28,6 +28,13 @@
                     <p><img src="{{ product.image.url }}" width='400' height='300' alt="{{ product.name }}"></p>
                 {% endif %}
                 <p>{{ product.price }}</p></li>
+            {% if user.is_authenticated %}
+                <form method="post" action="{% url 'user:add_to_basket' product.id %}">
+                    {% csrf_token %}
+                    <button type="submit">Add to basket</button>
+                </form>
+
+            {% endif %}
         {% endfor %}
     </ul>
     <p><a href='{% url 'products_for_year' year=2024 %}'>See all products for 2024</a></p>
@@ -35,10 +42,10 @@
     {% if page_obj.has_other_pages %}
         <nav class="list-pages">
             <ul>
-            {% if page_obj.has_previous %}
-                <li class="page-num"><a href="?{% for key, value in request.GET.items %}{% if key != 'page' %}{{ key }}={{ value }}&{% endif %}{% endfor %}page={{ page_obj.previous_page_number }}">&lt;</a>
-                        </li>
-            {% endif %}
+                {% if page_obj.has_previous %}
+                    <li class="page-num"><a href="?{% for key, value in request.GET.items %}{% if key != 'page' %}{{ key }}={{ value }}&{% endif %}{% endfor %}page={{ page_obj.previous_page_number }}">&lt;</a>
+                    </li>
+                {% endif %}
                 {% for p in paginator.page_range %}
                     {% if page_obj.number == p %}
                         <li class="page-num page-selected"><a href="?{% for key, value in request.GET.items %}{% if key != 'page' %}{{ key }}={{ value }}&{% endif %}{% endfor %}page={{ p }}">Текущая {{ p }}</a>
@@ -48,10 +55,10 @@
                         </li>
                     {% endif %}
                 {% endfor %}
-            {% if page_obj.has_next %}
-                <li class="page-num"><a href="?{% for key, value in request.GET.items %}{% if key != 'page' %}{{ key }}={{ value }}&{% endif %}{% endfor %}page={{ page_obj.next_page_number }}">&gt;</a>
-                        </li>
-            {% endif %}
+                {% if page_obj.has_next %}
+                    <li class="page-num"><a href="?{% for key, value in request.GET.items %}{% if key != 'page' %}{{ key }}={{ value }}&{% endif %}{% endfor %}page={{ page_obj.next_page_number }}">&gt;</a>
+                    </li>
+                {% endif %}
             </ul>
         </nav>
     {% endif %}

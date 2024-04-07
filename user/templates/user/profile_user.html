@@ -16,4 +16,20 @@
         </p>
         <p><a href="{% url 'user:password_change' %}">Change password</a></p>
     </form>
+    {% if basket %}
+        {% for item in basket %}
+            <p>Phone: {{ item.product }}<img src="{{ item.product.image.url }}" alt="phoneIMG" width="45" height="40">
+            </p>
+            <p>Quantity: {{ item.quantity }}</p>
+            <form method="post" action="{% url 'user:delete_from_basket' item.product_id %}">
+                {% csrf_token %}
+                <p>
+                    <button type="submit" name="delete_single">Delete from basket</button>
+                    <button type="submit" name="delete_all">Delete all</button>
+                </p>
+            </form>
+        {% endfor %}
+    {% else %}
+        <p>Basket is empty</p>
+    {% endif %}
 {% endblock %}

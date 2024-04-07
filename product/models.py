@@ -1,5 +1,6 @@
 from django.db import models
 from django.urls import reverse
+from user import models as user_models
 
 
 # Create your models here.
@@ -64,3 +65,9 @@ class PhoneTag(models.Model):
         verbose_name = 'Тэг'
         verbose_name_plural = 'Тэги'
         ordering = ['tag']
+
+
+class Basket(models.Model):
+    product = models.ForeignKey(PhoneProduct, on_delete=models.CASCADE, related_name='basket', verbose_name='Козрина')
+    user = models.ForeignKey(user_models.User, on_delete=models.CASCADE, related_name='basket', verbose_name='Корзина')
+    quantity = models.PositiveIntegerField(verbose_name='Количество', default=1)
