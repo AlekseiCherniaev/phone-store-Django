@@ -86,9 +86,9 @@ def add_to_basket(request, product_id):
 
 
 def delete_from_basket(request, product_id):
-    product = models.PhoneProduct.objects.get(id=product_id)
+    product = models.PhoneProduct.objects.get(pk=product_id)
 
-    basket = models.Basket.objects.get(product=product)
+    basket = models.Basket.objects.get(product=product, user=request.user)
     if 'delete_single' in request.POST:
         if basket.quantity > 1:
             basket.quantity -= 1
