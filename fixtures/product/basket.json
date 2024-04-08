@@ -1,0 +1,20 @@
+[
+{
+  "model": "product.basket",
+  "pk": 49,
+  "fields": {
+    "product": 12,
+    "user": 1,
+    "quantity": 1
+  }
+},
+{
+  "model": "product.basket",
+  "pk": 53,
+  "fields": {
+    "product": 11,
+    "user": 3,
+    "quantity": 2
+  }
+}
+]

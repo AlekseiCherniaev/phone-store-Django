@@ -1,0 +1,56 @@
+[
+{
+  "model": "product.phonecategory",
+  "pk": 1,
+  "fields": {
+    "name": "XIAOMI",
+    "description": "Xiaomi is a popular Chinese technology company that manufactures a wide range of products, including smartphones. Known for its affordable yet feature-packed devices, Xiaomi has gained a strong following in the smartphone market.",
+    "slug": "XIAOMI-1"
+  }
+},
+{
+  "model": "product.phonecategory",
+  "pk": 2,
+  "fields": {
+    "name": "realme",
+    "description": "Realme is a relatively new smartphone brand that was established in 2018 as a subsidiary of the Chinese company, Oppo. Realme aims to provide affordable smartphones with powerful specifications and an emphasis on the latest trends and features.",
+    "slug": "realme-2"
+  }
+},
+{
+  "model": "product.phonecategory",
+  "pk": 3,
+  "fields": {
+    "name": "Apple",
+    "description": "Apple Inc. is a leading technology company known for its innovative products, and one of its most popular product lines is the iPhone, a series of smartphones. The iPhone has consistently been at the forefront of mobile technology and has a large and dedicated following worldwide.",
+    "slug": "Apple-3"
+  }
+},
+{
+  "model": "product.phonecategory",
+  "pk": 4,
+  "fields": {
+    "name": "Samsung",
+    "description": "Samsung is another prominent technology company that manufactures a wide range of products, including smartphones. The Samsung Galaxy series, in particular, is highly popular and known for its advanced features and cutting-edge technology.",
+    "slug": "Samsung-4"
+  }
+},
+{
+  "model": "product.phonecategory",
+  "pk": 5,
+  "fields": {
+    "name": "HONOR",
+    "description": "Honor is a smartphone brand that was originally a subsidiary of Huawei, a well-known technology company. Honor smartphones are known for their high-quality build, innovative features, and competitive pricing. While maintaining a strong focus on delivering value for money, Honor devices offer a range of features and capabilities.",
+    "slug": "HONOR-5"
+  }
+},
+{
+  "model": "product.phonecategory",
+  "pk": 6,
+  "fields": {
+    "name": "Huawei",
+    "description": "Huawei is a global technology company that manufactures a wide range of products, including smartphones. Known for its innovative features, advanced technology, and high-quality devices, Huawei has gained recognition in the smartphone industry.",
+    "slug": "Huawei-6"
+  }
+}
+]

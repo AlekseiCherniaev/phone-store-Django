@@ -1,0 +1,1504 @@
+[
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2024-04-07T12:58:11.459Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "8",
+    "object_repr": "qwewqe",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2024-04-07T23:08:52.918Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "9",
+    "object_repr": "APPLE iPhone 13",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2024-04-07T23:12:33.904Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "9",
+    "object_repr": "iPhone 13",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0417\\u0430\\u0433\\u043e\\u043b\\u043e\\u0432\\u043e\\u043a\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2024-04-08T04:42:23.176Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "10",
+    "object_repr": "Apple iPhone 15 Pro",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2024-04-08T04:43:30.457Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "11",
+    "object_repr": "APPLE iPhone 14",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2024-04-08T04:48:01.397Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "11",
+    "object_repr": "APPLE iPhone 14",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041a\\u043e\\u043b\\u0438\\u0447\\u0435\\u0441\\u0442\\u0432\\u043e\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2024-04-08T04:48:02.850Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "11",
+    "object_repr": "APPLE iPhone 14",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2024-04-08T04:49:42.564Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "12",
+    "object_repr": "APPLE iPhone 11 Pro",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2024-04-08T04:49:57.277Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "3",
+    "object_repr": "Apple1",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2024-04-08T04:50:26.243Z",
+    "user": 1,
+    "content_type": 6,
+    "object_id": "4",
+    "object_repr": "Samsung",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0430\\u0437\\u0432\\u0430\\u043d\\u0438\\u0435\", \"\\u041e\\u043f\\u0438\\u0441\\u0430\\u043d\\u0438\\u0435\", \"\\u0421\\u043b\\u0430\\u0433\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2024-04-08T04:52:27.414Z",
+    "user": 1,
+    "content_type": 6,
+    "object_id": "3",
+    "object_repr": "Apple",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041e\\u043f\\u0438\\u0441\\u0430\\u043d\\u0438\\u0435\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 12,
+  "fields": {
+    "action_time": "2024-04-08T04:52:45.012Z",
+    "user": 1,
+    "content_type": 6,
+    "object_id": "4",
+    "object_repr": "Samsung",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041e\\u043f\\u0438\\u0441\\u0430\\u043d\\u0438\\u0435\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 13,
+  "fields": {
+    "action_time": "2024-04-08T04:53:29.931Z",
+    "user": 1,
+    "content_type": 6,
+    "object_id": "5",
+    "object_repr": "HONOR",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 14,
+  "fields": {
+    "action_time": "2024-04-08T04:53:37.500Z",
+    "user": 1,
+    "content_type": 6,
+    "object_id": "5",
+    "object_repr": "HONOR",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u043b\\u0430\\u0433\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 15,
+  "fields": {
+    "action_time": "2024-04-08T04:53:58.951Z",
+    "user": 1,
+    "content_type": 6,
+    "object_id": "6",
+    "object_repr": "Huawei",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 16,
+  "fields": {
+    "action_time": "2024-04-08T04:54:33.863Z",
+    "user": 1,
+    "content_type": 6,
+    "object_id": "1",
+    "object_repr": "XIAOMI",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0430\\u0437\\u0432\\u0430\\u043d\\u0438\\u0435\", \"\\u041e\\u043f\\u0438\\u0441\\u0430\\u043d\\u0438\\u0435\", \"\\u0421\\u043b\\u0430\\u0433\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 17,
+  "fields": {
+    "action_time": "2024-04-08T04:55:09.659Z",
+    "user": 1,
+    "content_type": 6,
+    "object_id": "2",
+    "object_repr": "realme",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041d\\u0430\\u0437\\u0432\\u0430\\u043d\\u0438\\u0435\", \"\\u041e\\u043f\\u0438\\u0441\\u0430\\u043d\\u0438\\u0435\", \"\\u0421\\u043b\\u0430\\u0433\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 18,
+  "fields": {
+    "action_time": "2024-04-08T04:58:26.903Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "4",
+    "object_repr": "Samsung Galaxy A55",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0417\\u0430\\u0433\\u043e\\u043b\\u043e\\u0432\\u043e\\u043a\", \"\\u041e\\u043f\\u0438\\u0441\\u0430\\u043d\\u0438\\u0435\", \"\\u0426\\u0435\\u043d\\u0430\", \"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\", \"\\u041a\\u043e\\u043b\\u0438\\u0447\\u0435\\u0441\\u0442\\u0432\\u043e\", \"\\u0422\\u044d\\u0433\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 19,
+  "fields": {
+    "action_time": "2024-04-08T15:02:41.744Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "2",
+    "object_repr": "Lenovo2",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 20,
+  "fields": {
+    "action_time": "2024-04-08T15:02:41.752Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "6",
+    "object_repr": "Sony1",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 21,
+  "fields": {
+    "action_time": "2024-04-08T15:02:41.753Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "7",
+    "object_repr": "Sony2",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 22,
+  "fields": {
+    "action_time": "2024-04-08T15:02:41.754Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "5",
+    "object_repr": "Sumsung2",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 23,
+  "fields": {
+    "action_time": "2024-04-08T15:03:01.052Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "Lenovo1",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 24,
+  "fields": {
+    "action_time": "2024-04-08T15:05:52.192Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "13",
+    "object_repr": "Samsung Galaxy S23 FE SM-S711B",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 25,
+  "fields": {
+    "action_time": "2024-04-08T15:07:28.296Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "14",
+    "object_repr": "Samsung Galaxy A05s SM-A057F",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 26,
+  "fields": {
+    "action_time": "2024-04-08T15:09:00.825Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "15",
+    "object_repr": "HONOR X8b (LLY-LX1)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 27,
+  "fields": {
+    "action_time": "2024-04-08T15:09:13.318Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "15",
+    "object_repr": "HONOR X8b (LLY-LX1)",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041a\\u043e\\u043b\\u0438\\u0447\\u0435\\u0441\\u0442\\u0432\\u043e\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 28,
+  "fields": {
+    "action_time": "2024-04-08T15:09:29.529Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "9",
+    "object_repr": "APPLE iPhone 13",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u0417\\u0430\\u0433\\u043e\\u043b\\u043e\\u0432\\u043e\\u043a\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 29,
+  "fields": {
+    "action_time": "2024-04-08T15:12:52.972Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "16",
+    "object_repr": "HONOR 90",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 30,
+  "fields": {
+    "action_time": "2024-04-08T15:13:02.140Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "16",
+    "object_repr": "HONOR 90",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"\\u041a\\u043e\\u043b\\u0438\\u0447\\u0435\\u0441\\u0442\\u0432\\u043e\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 31,
+  "fields": {
+    "action_time": "2024-04-08T15:14:07.573Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "17",
+    "object_repr": "Huawei nova 11 FOA-LX9",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 32,
+  "fields": {
+    "action_time": "2024-04-08T15:14:40.614Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "18",
+    "object_repr": "Huawei nova Y61 EVE-LX9N",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 33,
+  "fields": {
+    "action_time": "2024-04-08T15:15:21.078Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "19",
+    "object_repr": "Huawei nova 10 SE (BNE-LX1)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 34,
+  "fields": {
+    "action_time": "2024-04-08T15:17:25.486Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "20",
+    "object_repr": "Huawei nova Y91 STG-LX1",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 35,
+  "fields": {
+    "action_time": "2024-04-08T15:18:08.228Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "21",
+    "object_repr": "Huawei nova 11 Pro GOA-LX9",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 36,
+  "fields": {
+    "action_time": "2024-04-08T15:19:34.926Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "22",
+    "object_repr": "Xiaomi Redmi Note 12 Pro+",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 37,
+  "fields": {
+    "action_time": "2024-04-08T15:20:27.048Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "23",
+    "object_repr": "Xiaomi Redmi Note 12",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 38,
+  "fields": {
+    "action_time": "2024-04-08T15:21:44.063Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "24",
+    "object_repr": "Realme 12 Pro+ 5G RMX3840",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 39,
+  "fields": {
+    "action_time": "2024-04-08T15:22:30.816Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "25",
+    "object_repr": "Realme Note 50",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 40,
+  "fields": {
+    "action_time": "2024-04-08T15:23:11.058Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "26",
+    "object_repr": "Realme 11 Pro 5G",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 41,
+  "fields": {
+    "action_time": "2024-04-08T15:23:57.113Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "27",
+    "object_repr": "Realme C67 (RMX3890)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 1,
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": 1,
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 2,
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": 1,
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 3,
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": 1,
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 4,
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": 1,
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 5,
+  "fields": {
+    "name": "Can add permission",
+    "content_type": 2,
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 6,
+  "fields": {
+    "name": "Can change permission",
+    "content_type": 2,
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 7,
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": 2,
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 8,
+  "fields": {
+    "name": "Can view permission",
+    "content_type": 2,
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 9,
+  "fields": {
+    "name": "Can add group",
+    "content_type": 3,
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 10,
+  "fields": {
+    "name": "Can change group",
+    "content_type": 3,
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 11,
+  "fields": {
+    "name": "Can delete group",
+    "content_type": 3,
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 12,
+  "fields": {
+    "name": "Can view group",
+    "content_type": 3,
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 13,
+  "fields": {
+    "name": "Can add content type",
+    "content_type": 4,
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 14,
+  "fields": {
+    "name": "Can change content type",
+    "content_type": 4,
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 15,
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": 4,
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 16,
+  "fields": {
+    "name": "Can view content type",
+    "content_type": 4,
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 17,
+  "fields": {
+    "name": "Can add session",
+    "content_type": 5,
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 18,
+  "fields": {
+    "name": "Can change session",
+    "content_type": 5,
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 19,
+  "fields": {
+    "name": "Can delete session",
+    "content_type": 5,
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 20,
+  "fields": {
+    "name": "Can view session",
+    "content_type": 5,
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 21,
+  "fields": {
+    "name": "Can add Категория",
+    "content_type": 6,
+    "codename": "add_phonecategory"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 22,
+  "fields": {
+    "name": "Can change Категория",
+    "content_type": 6,
+    "codename": "change_phonecategory"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 23,
+  "fields": {
+    "name": "Can delete Категория",
+    "content_type": 6,
+    "codename": "delete_phonecategory"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 24,
+  "fields": {
+    "name": "Can view Категория",
+    "content_type": 6,
+    "codename": "view_phonecategory"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 25,
+  "fields": {
+    "name": "Can add Тэг",
+    "content_type": 7,
+    "codename": "add_phonetag"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 26,
+  "fields": {
+    "name": "Can change Тэг",
+    "content_type": 7,
+    "codename": "change_phonetag"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 27,
+  "fields": {
+    "name": "Can delete Тэг",
+    "content_type": 7,
+    "codename": "delete_phonetag"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 28,
+  "fields": {
+    "name": "Can view Тэг",
+    "content_type": 7,
+    "codename": "view_phonetag"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 29,
+  "fields": {
+    "name": "Can add Телефоны",
+    "content_type": 8,
+    "codename": "add_phoneproduct"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 30,
+  "fields": {
+    "name": "Can change Телефоны",
+    "content_type": 8,
+    "codename": "change_phoneproduct"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 31,
+  "fields": {
+    "name": "Can delete Телефоны",
+    "content_type": 8,
+    "codename": "delete_phoneproduct"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 32,
+  "fields": {
+    "name": "Can view Телефоны",
+    "content_type": 8,
+    "codename": "view_phoneproduct"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 33,
+  "fields": {
+    "name": "Can add basket",
+    "content_type": 9,
+    "codename": "add_basket"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 34,
+  "fields": {
+    "name": "Can change basket",
+    "content_type": 9,
+    "codename": "change_basket"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 35,
+  "fields": {
+    "name": "Can delete basket",
+    "content_type": 9,
+    "codename": "delete_basket"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 36,
+  "fields": {
+    "name": "Can view basket",
+    "content_type": 9,
+    "codename": "view_basket"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 37,
+  "fields": {
+    "name": "Can add user",
+    "content_type": 10,
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 38,
+  "fields": {
+    "name": "Can change user",
+    "content_type": 10,
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 39,
+  "fields": {
+    "name": "Can delete user",
+    "content_type": 10,
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 40,
+  "fields": {
+    "name": "Can view user",
+    "content_type": 10,
+    "codename": "view_user"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 1,
+  "fields": {
+    "app_label": "admin",
+    "model": "logentry"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 2,
+  "fields": {
+    "app_label": "auth",
+    "model": "permission"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 3,
+  "fields": {
+    "app_label": "auth",
+    "model": "group"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 4,
+  "fields": {
+    "app_label": "contenttypes",
+    "model": "contenttype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 5,
+  "fields": {
+    "app_label": "sessions",
+    "model": "session"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 6,
+  "fields": {
+    "app_label": "product",
+    "model": "phonecategory"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 7,
+  "fields": {
+    "app_label": "product",
+    "model": "phonetag"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 8,
+  "fields": {
+    "app_label": "product",
+    "model": "phoneproduct"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 9,
+  "fields": {
+    "app_label": "product",
+    "model": "basket"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 10,
+  "fields": {
+    "app_label": "user",
+    "model": "user"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "11tx1kykwhb6q7vd9zwnfhris556ttx8",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2pACQ8u4dO8ZyACDVA0kpV0Z765NutDtf-_9l_C0rcVvnRc_J3EWWpx-t0DxwXUH6U711mRsdV3mIHdFHrTLa0v8vBzu30GhXr61JTUZJGADg2aNwUwOomMeEUgZJgscR0Q3RMWKrUuZXc5Zk0oImMX7A9XcOCA:1rtaah:mXG3wNxDz-R5sVkHgfc4j_p9MCJzYBaVYBR5M68LdJY",
+    "expire_date": "2024-04-21T22:02:19.696Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "geizwbg36sr2630otjkurw8oku20ooxe",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2pACQ8u4dO8ZyACDVA0kpV0Z765NutDtf-_9l_C0rcVvnRc_J3EWWpx-t0DxwXUH6U711mRsdV3mIHdFHrTLa0v8vBzu30GhXr61JTUZJGADg2aNwUwOomMeEUgZJgscR0Q3RMWKrUuZXc5Zk0oImMX7A9XcOCA:1rtr20:oM9-uCA2vU8XPxLX1mVNTWzBj1l03pKGSRcthiN0mI8",
+    "expire_date": "2024-04-22T15:35:36.285Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "lwth1h89tnvotlcqfrwxruji30qrr3ci",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2pACQ8u4dO8ZyACDVA0kpV0Z765NutDtf-_9l_C0rcVvnRc_J3EWWpx-t0DxwXUH6U711mRsdV3mIHdFHrTLa0v8vBzu30GhXr61JTUZJGADg2aNwUwOomMeEUgZJgscR0Q3RMWKrUuZXc5Zk0oImMX7A9XcOCA:1rtr5s:cjw7LueKRv8UC--iEdwDbQXNpabN-iDhOTcdJHYbqnc",
+    "expire_date": "2024-04-22T15:39:36.404Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "pjp3u3h1jg38lpvh96iggecp0w2ciq13",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2pACQ8u4dO8ZyACDVA0kpV0Z765NutDtf-_9l_C0rcVvnRc_J3EWWpx-t0DxwXUH6U711mRsdV3mIHdFHrTLa0v8vBzu30GhXr61JTUZJGADg2aNwUwOomMeEUgZJgscR0Q3RMWKrUuZXc5Zk0oImMX7A9XcOCA:1rtr2f:1Ksf4lx3xUSPMjGchgHMDFiNS5BBUCnMD9dhEVIaT4s",
+    "expire_date": "2024-04-22T15:36:17.275Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "y8ndvwx2uevritgcs73ch5kfeqbmhcwt",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGlmO4y8lPWew1tldHEC2FCcV4u4QKQW0b2beSyTY1pK2TkuaUZzFIE6_W4bpQXUHeId6a3JqdV3mLHdFHrTLa0N6Xg7376BAL9_a2KxHBpow8ojW56giWlbecHTROGAChd44xKAd6SFYF0xgZ5WmYLJ4fwDyVDfH:1rtrSI:HqmyqkUn3phOGTGSDQ_RF7fgTljuou1MiZDJfK4aZFQ",
+    "expire_date": "2024-04-22T16:02:46.418Z"
+  }
+},
+{
+  "model": "product.phonecategory",
+  "pk": 1,
+  "fields": {
+    "name": "XIAOMI",
+    "description": "Xiaomi is a popular Chinese technology company that manufactures a wide range of products, including smartphones. Known for its affordable yet feature-packed devices, Xiaomi has gained a strong following in the smartphone market.",
+    "slug": "XIAOMI-1"
+  }
+},
+{
+  "model": "product.phonecategory",
+  "pk": 2,
+  "fields": {
+    "name": "realme",
+    "description": "Realme is a relatively new smartphone brand that was established in 2018 as a subsidiary of the Chinese company, Oppo. Realme aims to provide affordable smartphones with powerful specifications and an emphasis on the latest trends and features.",
+    "slug": "realme-2"
+  }
+},
+{
+  "model": "product.phonecategory",
+  "pk": 3,
+  "fields": {
+    "name": "Apple",
+    "description": "Apple Inc. is a leading technology company known for its innovative products, and one of its most popular product lines is the iPhone, a series of smartphones. The iPhone has consistently been at the forefront of mobile technology and has a large and dedicated following worldwide.",
+    "slug": "Apple-3"
+  }
+},
+{
+  "model": "product.phonecategory",
+  "pk": 4,
+  "fields": {
+    "name": "Samsung",
+    "description": "Samsung is another prominent technology company that manufactures a wide range of products, including smartphones. The Samsung Galaxy series, in particular, is highly popular and known for its advanced features and cutting-edge technology.",
+    "slug": "Samsung-4"
+  }
+},
+{
+  "model": "product.phonecategory",
+  "pk": 5,
+  "fields": {
+    "name": "HONOR",
+    "description": "Honor is a smartphone brand that was originally a subsidiary of Huawei, a well-known technology company. Honor smartphones are known for their high-quality build, innovative features, and competitive pricing. While maintaining a strong focus on delivering value for money, Honor devices offer a range of features and capabilities.",
+    "slug": "HONOR-5"
+  }
+},
+{
+  "model": "product.phonecategory",
+  "pk": 6,
+  "fields": {
+    "name": "Huawei",
+    "description": "Huawei is a global technology company that manufactures a wide range of products, including smartphones. Known for its innovative features, advanced technology, and high-quality devices, Huawei has gained recognition in the smartphone industry.",
+    "slug": "Huawei-6"
+  }
+},
+{
+  "model": "product.phoneproduct",
+  "pk": 4,
+  "fields": {
+    "name": "Samsung Galaxy A55",
+    "description": "Экран:  6.6 \" 1080x2340 пикселей, AMOLED (Super AMOLED)\r\nПроцессор:  Exynos 1480 , 8 ядр., 2.75 ГГц\r\nПамять:  ОЗУ 8 ГБ , 256 ГБ\r\nФормат физической SIM-карты:  Nano\r\nРазрешение основного модуля камеры:  50 Мп",
+    "price": "3219.99",
+    "category": 4,
+    "image": "photos/-1_600_2.jpg",
+    "quantity": 7,
+    "slug": "Sumsung1",
+    "tag": [
+      3,
+      2
+    ]
+  }
+},
+{
+  "model": "product.phoneproduct",
+  "pk": 9,
+  "fields": {
+    "name": "APPLE iPhone 13",
+    "description": "Экран:  6.1 \" 1170x2532 пикселей, OLED\r\nПроцессор:  Apple A15 Bionic , 6 ядр.\r\nПамять:  ОЗУ 4 ГБ , 128 ГБ\r\nФормат физической SIM-карты:  Nano\r\nРазрешение основного модуля камеры:  12 Мп",
+    "price": "4000.99",
+    "category": 3,
+    "image": "photos/-1_600.jpg",
+    "quantity": 0,
+    "slug": "apple-iphone-13",
+    "tag": [
+      4,
+      1,
+      2
+    ]
+  }
+},
+{
+  "model": "product.phoneproduct",
+  "pk": 10,
+  "fields": {
+    "name": "Apple iPhone 15 Pro",
+    "description": "Экран:  6.1 \" 1179х2556 пикселей, OLED\r\nПроцессор:  Apple A17 Pro , 6 ядр., 3.78 ГГц\r\nПамять:  ОЗУ 8 ГБ , 256 ГБ\r\nФормат физической SIM-карты:  Nano\r\nРазрешение основного модуля камеры:  48 Мп",
+    "price": "7800.00",
+    "category": 3,
+    "image": "photos/iphone-15-pro-256gb-natural-titanium-telefon-gsm-apple-mtuf3j-a-1_600.jpg",
+    "quantity": 1,
+    "slug": "apple-iphone-15-pro",
+    "tag": [
+      4,
+      3
+    ]
+  }
+},
+{
+  "model": "product.phoneproduct",
+  "pk": 11,
+  "fields": {
+    "name": "APPLE iPhone 14",
+    "description": "Экран:  6.1 \" 1170x2532 пикселей, OLED\r\nПроцессор:  Apple A15 Bionic , 6 ядр., 3.23 ГГц\r\nПамять:  ОЗУ 6 ГБ , 128 ГБ\r\nФормат физической SIM-карты:  Nano\r\nРазрешение основного модуля камеры:  12 Мп",
+    "price": "4580.99",
+    "category": 3,
+    "image": "photos/iphone-14-128gb-starlight-telefon-gsm-apple-mpur3hn-a-1_600.jpg",
+    "quantity": 0,
+    "slug": "apple-iphone-14",
+    "tag": []
+  }
+},
+{
+  "model": "product.phoneproduct",
+  "pk": 12,
+  "fields": {
+    "name": "APPLE iPhone 11 Pro",
+    "description": "Экран:  6.1 \" 1170x2532 пикселей, OLED\r\nПроцессор:  Apple A15 Bionic , 6 ядр.\r\nПамять:  ОЗУ 4 ГБ , 128 ГБ\r\nФормат физической SIM-карты:  Nano\r\nРазрешение основного модуля камеры:  12 Мп",
+    "price": "3219.99",
+    "category": 3,
+    "image": "photos/-1_600_1.jpg",
+    "quantity": 1,
+    "slug": "apple-iphone-11-pro",
+    "tag": [
+      4,
+      2
+    ]
+  }
+},
+{
+  "model": "product.phoneproduct",
+  "pk": 13,
+  "fields": {
+    "name": "Samsung Galaxy S23 FE SM-S711B",
+    "description": "Экран:  6.4 \" 1080x2340 пикселей, Dynamic AMOLED 2X\r\nПроцессор:  Exynos 2200 , 8 ядр., 2.8 ГГц\r\nПамять:  ОЗУ 8 ГБ , 128 ГБ\r\nФормат физической SIM-карты:  Nano\r\nРазрешение основного модуля камеры:  50 Мп",
+    "price": "3289.99",
+    "category": 4,
+    "image": "photos/sm-s711b-seryy-128gb-telefon-gsm-samsung-galaxy-s23-fe-1_600.jpg",
+    "quantity": 4,
+    "slug": "samsung-galaxy-s23-fe-sm-s711b",
+    "tag": [
+      1,
+      3
+    ]
+  }
+},
+{
+  "model": "product.phoneproduct",
+  "pk": 14,
+  "fields": {
+    "name": "Samsung Galaxy A05s SM-A057F",
+    "description": "Экран:  6.7 \" 1080x2400 пикселей, PLS\r\nПроцессор:  Qualcomm Snapdragon 680 , 8 ядр., 2.4 ГГц\r\nПамять:  ОЗУ 4 ГБ , 128 ГБ\r\nФормат физической SIM-карты:  Nano\r\nРазрешение основного модуля камеры:  50 Мп",
+    "price": "2100.00",
+    "category": 4,
+    "image": "photos/sm-a057f-fioletovyy-128gb-telefon-gsm-samsung-galaxy-a057-lte-1_600.jpg",
+    "quantity": 2,
+    "slug": "samsung-galaxy-a05s-sm-a057f",
+    "tag": []
+  }
+},
+{
+  "model": "product.phoneproduct",
+  "pk": 15,
+  "fields": {
+    "name": "HONOR X8b (LLY-LX1)",
+    "description": "Экран:  6.7 \" 1080x2412 пикселей, AMOLED\r\nПроцессор:  Qualcomm Snapdragon 680 , 8 ядр., 2.4 ГГц\r\nПамять:  ОЗУ 8 ГБ , 256 ГБ\r\nФормат физической SIM-карты:  Nano\r\nРазрешение основного модуля камеры:  108 Мп",
+    "price": "2412.25",
+    "category": 5,
+    "image": "photos/x8b-lly-lx1-8gb-256gb-glamorous-green-telefon-gsm-honor-1_600.jpg",
+    "quantity": 3,
+    "slug": "honor-x8b-lly-lx1",
+    "tag": [
+      4
+    ]
+  }
+},
+{
+  "model": "product.phoneproduct",
+  "pk": 16,
+  "fields": {
+    "name": "HONOR 90",
+    "description": "Экран:  6.7 \" 1200x2664 пикселей, AMOLED\r\nПроцессор:  Qualcomm Snapdragon 7 Gen1 Accelerated Edition , 8 ядр., 2.5 ГГц\r\nПамять:  ОЗУ 8 ГБ , 256 ГБ\r\nФормат физической SIM-карты:  Nano\r\nРазрешение основного модуля камеры:  200 Мп",
+    "price": "3219.99",
+    "category": 5,
+    "image": "photos/90-rea-nx9-8gb-256gb-peacock-blue-telefon-gsm-honor-1_600.jpg",
+    "quantity": 4,
+    "slug": "honor-90",
+    "tag": [
+      2
+    ]
+  }
+},
+{
+  "model": "product.phoneproduct",
+  "pk": 17,
+  "fields": {
+    "name": "Huawei nova 11 FOA-LX9",
+    "description": "Экран:  6.7 \" 1084х2412 пикселей, OLED\r\nПроцессор:  Qualcomm Snapdragon 778G , 8 ядр., 2.4 ГГц\r\nПамять:  ОЗУ 8 ГБ , 256 ГБ\r\nФормат физической SIM-карты:  Nano\r\nРазрешение основного модуля камеры:  50 Мп",
+    "price": "1199.00",
+    "category": 6,
+    "image": "photos/nova-11-foa-lx9-black-telefon-gsm-huawei-1_600.jpg",
+    "quantity": 5,
+    "slug": "huawei-nova-11-foa-lx9",
+    "tag": [
+      3
+    ]
+  }
+},
+{
+  "model": "product.phoneproduct",
+  "pk": 18,
+  "fields": {
+    "name": "Huawei nova Y61 EVE-LX9N",
+    "description": "Экран:  6.52 \" 720x1600 пикселей, IPS\r\nПроцессор:  HiSilicon Kirin 710A , 8 ядр., 2 ГГц\r\nПамять:  ОЗУ 4 ГБ , 128 ГБ\r\nФормат физической SIM-карты:  Nano\r\nРазрешение основного модуля камеры:  50 Мп",
+    "price": "299.00",
+    "category": 6,
+    "image": "photos/nova-y61-4gb-128gb-eve-lx9n-midnight-black-telefon-gsm-huawei-1_600.jpg",
+    "quantity": 3,
+    "slug": "huawei-nova-y61-eve-lx9n",
+    "tag": [
+      3,
+      2
+    ]
+  }
+},
+{
+  "model": "product.phoneproduct",
+  "pk": 19,
+  "fields": {
+    "name": "Huawei nova 10 SE (BNE-LX1)",
+    "description": "Экран:  6.67 \" 1080x2400 пикселей, OLED\r\nПроцессор:  Qualcomm Snapdragon 680 , 8 ядр., 2.4 ГГц\r\nПамять:  ОЗУ 8 ГБ , 128 ГБ\r\nФормат физической SIM-карты:  Nano\r\nРазрешение основного модуля камеры:  108 Мп",
+    "price": "699.00",
+    "category": 6,
+    "image": "photos/-1_600_mu5Z49i.jpg",
+    "quantity": 2,
+    "slug": "huawei-nova-10-se-bne-lx1",
+    "tag": [
+      2
+    ]
+  }
+},
+{
+  "model": "product.phoneproduct",
+  "pk": 20,
+  "fields": {
+    "name": "Huawei nova Y91 STG-LX1",
+    "description": "Экран:  6.52 \" 720x1600 пикселей, IPS\r\nПроцессор:  HiSilicon Kirin 710A , 8 ядр., 2 ГГц\r\nПамять:  ОЗУ 4 ГБ , 128 ГБ\r\nФормат физической SIM-карты:  Nano\r\nРазрешение основного модуля камеры:  50 Мп",
+    "price": "749.00",
+    "category": 6,
+    "image": "photos/nova-y91-256gb-stg-lx1-starry-black-telefon-gsm-huawei-1_600.jpg",
+    "quantity": 6,
+    "slug": "huawei-nova-u91-stg-lx1",
+    "tag": [
+      3
+    ]
+  }
+},
+{
+  "model": "product.phoneproduct",
+  "pk": 21,
+  "fields": {
+    "name": "Huawei nova 11 Pro GOA-LX9",
+    "description": "Экран:  6.78 \" 1200x2652 пикселей, OLED\r\nПроцессор:  Qualcomm Snapdragon 778G , 8 ядр., 2.4 ГГц\r\nПамять:  ОЗУ 8 ГБ , 256 ГБ\r\nФормат физической SIM-карты:  Nano\r\nРазрешение основного модуля камеры:  50 Мп",
+    "price": "1599.00",
+    "category": 6,
+    "image": "photos/nova-11-pro-goa-lx9-green-telefon-gsm-huawei-1_600.jpg",
+    "quantity": 2,
+    "slug": "huawei-nova-11-pro-goa-lx9",
+    "tag": [
+      4
+    ]
+  }
+},
+{
+  "model": "product.phoneproduct",
+  "pk": 22,
+  "fields": {
+    "name": "Xiaomi Redmi Note 12 Pro+",
+    "description": "Экран:  6.67 \" 1080x2400 пикселей, AMOLED\r\nПроцессор:  MediaTek Dimensity 1080 , 8 ядр., 2.6 ГГц\r\nПамять:  ОЗУ 8 ГБ , 256 ГБ\r\nФормат физической SIM-карты:  Nano\r\nРазрешение основного модуля камеры:  200 Мп",
+    "price": "1031.00",
+    "category": 1,
+    "image": "photos/redmi-note-12-pro-plus-5g-8gb-256gb-midnight-black-eu-telefon-gsm-xiaomi-1_600.jpg",
+    "quantity": 4,
+    "slug": "xiaomi-redmi-note-12-pro",
+    "tag": [
+      3
+    ]
+  }
+},
+{
+  "model": "product.phoneproduct",
+  "pk": 23,
+  "fields": {
+    "name": "Xiaomi Redmi Note 12",
+    "description": "Экран:  6.67 \" 1080x2400 пикселей, AMOLED\r\nПроцессор:  Qualcomm Snapdragon 685 , 8 ядр., 2.8 ГГц\r\nПамять:  ОЗУ 6 ГБ , 128 ГБ\r\nФормат физической SIM-карты:  Nano\r\nРазрешение основного модуля камеры:  50 Мп",
+    "price": "583.00",
+    "category": 1,
+    "image": "photos/redmi-note-12-6gb-128gb-nfc-onyx-gray-ru-telefon-gsm-xiaomi-1_600.jpg",
+    "quantity": 2,
+    "slug": "xiaomi-redmi-note-12",
+    "tag": [
+      3
+    ]
+  }
+},
+{
+  "model": "product.phoneproduct",
+  "pk": 24,
+  "fields": {
+    "name": "Realme 12 Pro+ 5G RMX3840",
+    "description": "Экран:  6.7 \" 1080x2412 пикселей, AMOLED\r\nПроцессор:  Qualcomm Snapdragon 7s Gen2 , 8 ядр., 2.4 ГГц\r\nПамять:  ОЗУ 12 ГБ , 512 ГБ\r\nФормат физической SIM-карты:  Nano\r\nРазрешение основного модуля камеры:  50 Мп",
+    "price": "1899.00",
+    "category": 2,
+    "image": "photos/-1_600_1_6qEIdLC.jpg",
+    "quantity": 4,
+    "slug": "realme-12-pro-5g-rmx3840",
+    "tag": [
+      4,
+      1
+    ]
+  }
+},
+{
+  "model": "product.phoneproduct",
+  "pk": 25,
+  "fields": {
+    "name": "Realme Note 50",
+    "description": "Экран:  6.74 \" 720x1600 пикселей, IPS\r\nПроцессор:  UniSoC Tiger T612 , 8 ядр., 1.82 ГГц\r\nПамять:  ОЗУ 4 ГБ , 128 ГБ\r\nФормат физической SIM-карты:  Nano\r\nРазрешение основного модуля камеры:  13 Мп",
+    "price": "329.00",
+    "category": 2,
+    "image": "photos/note-50-rmx3834-4gb-128gb-midnight-black-telefon-gsm-realme-1_600.jpg",
+    "quantity": 5,
+    "slug": "realme-note-50",
+    "tag": []
+  }
+},
+{
+  "model": "product.phoneproduct",
+  "pk": 26,
+  "fields": {
+    "name": "Realme 11 Pro 5G",
+    "description": "Экран:  6.7 \" 1080x2412 пикселей, AMOLED\r\nПроцессор:  MediaTek Dimensity 7050 , 8 ядр., 2.6 ГГц\r\nПамять:  ОЗУ 8 ГБ , 256 ГБ\r\nФормат физической SIM-карты:  Nano\r\nРазрешение основного модуля камеры:  100 Мп",
+    "price": "1099.00",
+    "category": 2,
+    "image": "photos/11-pro-5g-rmx3771-8gb-256gb-black-telefon-gsm-realme-1_600.jpg",
+    "quantity": 5,
+    "slug": "realme-11-pro-5g",
+    "tag": [
+      1,
+      3,
+      2
+    ]
+  }
+},
+{
+  "model": "product.phoneproduct",
+  "pk": 27,
+  "fields": {
+    "name": "Realme C67 (RMX3890)",
+    "description": "Экран:  6.72 \" 1080x2400 пикселей, IPS\r\nПроцессор:  Qualcomm Snapdragon 685 , 8 ядр., 2.8 ГГц\r\nПамять:  ОЗУ 8 ГБ , 256 ГБ\r\nФормат физической SIM-карты:  Nano\r\nРазрешение основного модуля камеры:  108 Мп",
+    "price": "799.00",
+    "category": 2,
+    "image": "photos/note-50-rmx3834-4gb-128gb-midnight-black-telefon-gsm-realme-1_600_xSXYhKd.jpg",
+    "quantity": 3,
+    "slug": "realme-c67-rmx3890",
+    "tag": [
+      4,
+      1
+    ]
+  }
+},
+{
+  "model": "product.phonetag",
+  "pk": 1,
+  "fields": {
+    "tag": "4k",
+    "slug": "4k-1"
+  }
+},
+{
+  "model": "product.phonetag",
+  "pk": 2,
+  "fields": {
+    "tag": "FullHD",
+    "slug": "FullHD-2"
+  }
+},
+{
+  "model": "product.phonetag",
+  "pk": 3,
+  "fields": {
+    "tag": "FastCharge",
+    "slug": "FastCharge-3"
+  }
+},
+{
+  "model": "product.phonetag",
+  "pk": 4,
+  "fields": {
+    "tag": "120Fps",
+    "slug": "120Fps-4"
+  }
+},
+{
+  "model": "product.basket",
+  "pk": 49,
+  "fields": {
+    "product": 12,
+    "user": 1,
+    "quantity": 1
+  }
+},
+{
+  "model": "product.basket",
+  "pk": 53,
+  "fields": {
+    "product": 11,
+    "user": 3,
+    "quantity": 2
+  }
+},
+{
+  "model": "user.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$720000$Pev31K1Pj8WqqrxjQGqAMC$0oesEDkz0yBHwSM4lEpChFaRh1Hspi4Zn2L98Bx3fgM=",
+    "last_login": "2024-04-08T16:02:46.388Z",
+    "is_superuser": true,
+    "username": "lenovo",
+    "first_name": "",
+    "last_name": "",
+    "email": "dudkenebcjskekek@gmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2024-04-07T12:49:03.085Z",
+    "image": "/media/profile_photo/default_photo.jpg",
+    "date_of_birth": null,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "user.user",
+  "pk": 2,
+  "fields": {
+    "password": "pbkdf2_sha256$720000$kvUqSHnkvCdS1wBUay1omI$tRoQiVSv/eP0IS0mz8tHTuC8EVhlAsHu0U7LvolsGzA=",
+    "last_login": "2024-04-08T15:49:43.985Z",
+    "is_superuser": false,
+    "username": "lenovo123",
+    "first_name": "Alex",
+    "last_name": "Vegiof",
+    "email": "novtgostv@gmail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2024-04-07T15:57:44.255Z",
+    "image": "media/profile_photo/150.png",
+    "date_of_birth": null,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "user.user",
+  "pk": 3,
+  "fields": {
+    "password": "pbkdf2_sha256$720000$xZevD4RoCtLAB8YNJ1puSB$ALbWqOD9lVohaxb4J5yIN2QvuGUmydnMkin2S1Om2bM=",
+    "last_login": "2024-04-08T15:49:47.741Z",
+    "is_superuser": false,
+    "username": "lenovo12345",
+    "first_name": "Alex",
+    "last_name": "Vegiof",
+    "email": "cherniaevaleksey230423@gmail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2024-04-08T15:49:41.175Z",
+    "image": "/media/profile_photo/default_photo.jpg",
+    "date_of_birth": null,
+    "groups": [],
+    "user_permissions": []
+  }
+}
+]

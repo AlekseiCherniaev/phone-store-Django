@@ -1,5 +1,4 @@
 from django import forms
-from django.core import validators
 from django.utils.deconstruct import deconstructible
 
 from product import models
@@ -23,13 +22,26 @@ class AddProductForm(forms.ModelForm):
 
     class Meta:
         model = models.PhoneProduct
-        # fields = '__all__'
         fields = ['name', 'price', 'quantity', 'description', 'image', 'slug', 'category', 'tag']
         labels = {'name': 'Phone Name', 'category': 'Phone category', 'price': 'Phone price', 'image': 'Phone image',
                   'description': 'Phone description', 'quantity': 'Phone quantity', 'tag': 'Phone tag',
                   'slug': 'Phone slug'}
-        widgets = {'name': forms.TextInput(attrs={'class': 'form-input'}),
-                   'description': forms.Textarea(attrs={'cols': 50, 'rows': 5})}
+        widgets = {
+            'name': forms.TextInput(attrs={'class': 'form-input', 'style': 'display: inline-block;',
+                                           'placeholder': 'Enter the phone name'}),
+            'description': forms.Textarea(attrs={'class': 'form-textarea', 'style': 'display: inline-block;', 'rows': 5,
+                                                 'placeholder': 'Enter the phone description'}),
+            'price': forms.NumberInput(attrs={'class': 'form-input', 'style': 'display: inline-block;',
+                                              'placeholder': 'Enter the phone price'}),
+            'quantity': forms.NumberInput(attrs={'class': 'form-input', 'style': 'display: inline-block;',
+                                                 'placeholder': 'Enter the phone quantity'}),
+            'image': forms.ClearableFileInput(
+                attrs={'class': 'form-file-input', 'style': 'display: inline-block;', 'accept': 'image/*'}),
+            'slug': forms.TextInput(attrs={'class': 'form-input', 'style': 'display: inline-block;',
+                                           'placeholder': 'Enter the phone slug'}),
+            'category': forms.Select(attrs={'class': 'form-select', 'style': 'display: inline-block;'}),
+            'tag': forms.SelectMultiple(attrs={'class': 'form-select', 'style': 'display: inline-block;'}),
+        }
 
     # tag = forms.ModelChoiceField(queryset=models.PhoneTag.objects.all(), required=False, label='Tags')
 

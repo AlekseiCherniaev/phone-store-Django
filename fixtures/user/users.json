@@ -1,0 +1,62 @@
+[
+{
+  "model": "user.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$720000$Pev31K1Pj8WqqrxjQGqAMC$0oesEDkz0yBHwSM4lEpChFaRh1Hspi4Zn2L98Bx3fgM=",
+    "last_login": "2024-04-08T16:02:46.388Z",
+    "is_superuser": true,
+    "username": "lenovo",
+    "first_name": "",
+    "last_name": "",
+    "email": "dudkenebcjskekek@gmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2024-04-07T12:49:03.085Z",
+    "image": "/media/profile_photo/default_photo.jpg",
+    "date_of_birth": null,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "user.user",
+  "pk": 2,
+  "fields": {
+    "password": "pbkdf2_sha256$720000$kvUqSHnkvCdS1wBUay1omI$tRoQiVSv/eP0IS0mz8tHTuC8EVhlAsHu0U7LvolsGzA=",
+    "last_login": "2024-04-08T15:49:43.985Z",
+    "is_superuser": false,
+    "username": "lenovo123",
+    "first_name": "Alex",
+    "last_name": "Vegiof",
+    "email": "novtgostv@gmail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2024-04-07T15:57:44.255Z",
+    "image": "media/profile_photo/150.png",
+    "date_of_birth": null,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "user.user",
+  "pk": 3,
+  "fields": {
+    "password": "pbkdf2_sha256$720000$xZevD4RoCtLAB8YNJ1puSB$ALbWqOD9lVohaxb4J5yIN2QvuGUmydnMkin2S1Om2bM=",
+    "last_login": "2024-04-08T15:49:47.741Z",
+    "is_superuser": false,
+    "username": "lenovo12345",
+    "first_name": "Alex",
+    "last_name": "Vegiof",
+    "email": "cherniaevaleksey230423@gmail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2024-04-08T15:49:41.175Z",
+    "image": "/media/profile_photo/default_photo.jpg",
+    "date_of_birth": null,
+    "groups": [],
+    "user_permissions": []
+  }
+}
+]

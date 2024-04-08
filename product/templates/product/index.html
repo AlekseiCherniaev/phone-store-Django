@@ -1,6 +1,46 @@
-{% extends 'product/base.html' %}
+{% extends 'base/base.html' %}
 {% load static %}
+{% block stylesheets %}
+<style>
+    .hero-image {
+        background-image: url('{% static "img/scale_1200.jpg" %}');
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        color: white;
+        padding-top: 5vh;
+    }
+
+    .hero-image h2 {
+        font-size: 4rem;
+        font-weight: bold;
+        color: #ffffff;
+    }
+
+    .hero-image p {
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 2rem;
+        color: #ffffff;
+    }
+</style>
+{% endblock %}
 {% block content %}
-    <h2>Welcome officer!</h2>
-    {% include 'product/includes/menu.html' %}
+    
+{% include 'includes/menu.html' %}
+
+<div class="hero-image">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2 text-center">
+                <h2 class="display-4">Store</h2>
+                <p class="lead">New phones and best prices in our Store</p>
+                <a href="{% url 'products' %}" class="btn btn-primary">Start shopping!</a>
+            </div>
+        </div>
+    </div>
+</div>    
 {% endblock %}

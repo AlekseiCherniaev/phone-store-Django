@@ -1,18 +1,30 @@
-{% extends 'product/base.html' %}
+{% extends 'base/base.html' %}
 {% block content %}
-    <p>Register here</p>
-    <form method="post">
-        {% csrf_token %}
-        <div class="form-errors">{{ form.non_field_errors }}</div>
-        {% for f in form %}
-            <p>
-                <label class="form-label" for="{{ f.id_for_label }}">{{ f.label }}</label>
-                {{ f }}
-                {{ f.errors }}
-            </p>
-        {% endfor %}
-        <p>
-            <button type="submit">Register!</button>
-        </p>
-    </form>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <h2>Register Here</h2>
+                <p><a href="{% url 'index' %}">Back to Store</a></p>
+                <form method="post" class="registration-form">
+                    {% csrf_token %}
+
+                    <div class="form-errors">
+                        {{ form.non_field_errors }}
+                    </div>
+
+                    {% for f in form %}
+                        <div class="form-group">
+                            <label for="{{ f.id_for_label }}"><strong>{{ f.label }}</strong></label>
+                            {{ f }}
+                            <p class="form-error">{{ f.errors }}</p>
+                        </div>
+                    {% endfor %}
+
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary">Register</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 {% endblock %}

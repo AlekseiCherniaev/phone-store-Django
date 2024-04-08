@@ -1,0 +1,34 @@
+[
+{
+  "model": "product.phonetag",
+  "pk": 1,
+  "fields": {
+    "tag": "4k",
+    "slug": "4k-1"
+  }
+},
+{
+  "model": "product.phonetag",
+  "pk": 2,
+  "fields": {
+    "tag": "FullHD",
+    "slug": "FullHD-2"
+  }
+},
+{
+  "model": "product.phonetag",
+  "pk": 3,
+  "fields": {
+    "tag": "FastCharge",
+    "slug": "FastCharge-3"
+  }
+},
+{
+  "model": "product.phonetag",
+  "pk": 4,
+  "fields": {
+    "tag": "120Fps",
+    "slug": "120Fps-4"
+  }
+}
+]

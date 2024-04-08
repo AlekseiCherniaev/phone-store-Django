@@ -1,19 +1,52 @@
-{% extends 'product/base.html' %}
+{% extends 'base/base.html' %}
 
 {% block content %}
-    {% include 'product/includes/menu.html' %}
-    <h2>Profile</h2>
-    <form method="post" enctype="multipart/form-data">
-        {% csrf_token %}
-        {% for f in form %}
-            <p><label class="form-label" for="{{ f.id_for_label }}">{{ f.label }}: </label>{{ f }}
-                {% if f == form.image %}
-                    <p><img src="{{ user.image.url }}" alt='image' width="120" height="140">
-                {% endif %}{{ f.errors }}</p>
-        {% endfor %}
-        <p>
-            <button type="submit">Save</button>
-        </p>
-        <p><a href="{% url 'user:password_change' %}">Change password</a></p>
-    </form>
+    {% include 'includes/menu.html' %}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Profile</h2>
+                <form method="post" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    {% for field in form %}
+                        <div class="mb-3">
+                            <label for="{{ field.id_for_label }}" class="form-label">{{ field.label }}: </label>
+                            {{ field }}
+                            {{ field.errors }}
+                            {% if field == form.image %}
+                                <div class="mt-2">
+                                    <img src="{{ user.image.url }}" alt='image' width="120" height="140">
+                                </div>
+                            {% endif %}
+                        </div>
+                    {% endfor %}
+                    <button type="submit" class="btn btn-primary">Save</button>
+                </form>
+                <p class="mt-3"><a href="{% url 'user:password_change' %}" class="btn btn-secondary">Change password</a>
+                </p>
+            </div>
+            <div class="col-md-6">
+                <h2>User Cart</h2>
+                {% if basket %}
+                    {% for item in basket %}
+                        <div class="mb-3">
+                            <p><strong>{{ item.product }}</strong><img src="{{ item.product.image.url }}" alt="phoneIMG"
+                                                                       width="45" height="40"></p>
+                            <p>Quantity: {{ item.quantity }}</p>
+                            <form method="get" action="{% url 'user:delete_from_basket' item.product_id %}">
+                                {% csrf_token %}
+                                <button type="submit" name="delete_single" value="1" class="btn btn-danger">Delete from
+                                    basket
+                                </button>
+                                <button type="submit" name="delete_all" value="1" class="btn btn-danger">Delete all
+                                </button>
+                            </form>
+                        </div>
+                    {% endfor %}
+                {% else %}
+                    <p class="mb-3">Basket is empty</p>
+                {% endif %}
+            </div>
+        </div>
+    </div>
 {% endblock %}
