@@ -1,13 +1,31 @@
 {% extends 'base/base.html' %}
 {% load static %}
+
 {% block content %}
     {% include 'includes/menu.html' %}
-    <h2>{{ category.name }}</h2>
-    {% for cat in category.products.all %}
-        <p>{{ cat.name }}</p>
-        <p>{{ cat.description }}</p>
-        <p>{{ cat.price }}</p>
-        <p><img src="{% static cat.image.url %}" alt="Phone image" width="400" height="250"></p>
-    {% endfor %}
-    
+    <div class="container">
+        <br>
+        <h2>{{ category.name }}</h2>
+        <p>{{ category.description }}</p>
+        <div class="row">
+            {% for product in category.products.all %}
+                {% if product.quantity > 0 %}
+                <div class="col-md-4">
+                    <div class="card mb-3">
+                        <a href="{{ product.get_absolute_url }}">
+                            <img src="{{ product.image.url }}" alt="{{ product.name }}" class="card-img-top">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <a href="{{ product.get_absolute_url }}">{{ product.name }}</a>
+                            </h5>
+                            <p class="card-text">{{ product.description }}</p>
+                            <p class="card-text"><strong>Price:{{ product.price }}</strong></p>
+                        </div>
+                    </div>
+                </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
 {% endblock %}

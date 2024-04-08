@@ -1,0 +1,327 @@
+[
+{
+  "model": "product.phoneproduct",
+  "pk": 4,
+  "fields": {
+    "name": "Samsung Galaxy A55",
+    "description": "Экран:  6.6 \" 1080x2340 пикселей, AMOLED (Super AMOLED)\r\nПроцессор:  Exynos 1480 , 8 ядр., 2.75 ГГц\r\nПамять:  ОЗУ 8 ГБ , 256 ГБ\r\nФормат физической SIM-карты:  Nano\r\nРазрешение основного модуля камеры:  50 Мп",
+    "price": "3219.99",
+    "category": 4,
+    "image": "photos/-1_600_2.jpg",
+    "quantity": 7,
+    "slug": "Sumsung1",
+    "tag": [
+      3,
+      2
+    ]
+  }
+},
+{
+  "model": "product.phoneproduct",
+  "pk": 9,
+  "fields": {
+    "name": "APPLE iPhone 13",
+    "description": "Экран:  6.1 \" 1170x2532 пикселей, OLED\r\nПроцессор:  Apple A15 Bionic , 6 ядр.\r\nПамять:  ОЗУ 4 ГБ , 128 ГБ\r\nФормат физической SIM-карты:  Nano\r\nРазрешение основного модуля камеры:  12 Мп",
+    "price": "4000.99",
+    "category": 3,
+    "image": "photos/-1_600.jpg",
+    "quantity": 0,
+    "slug": "apple-iphone-13",
+    "tag": [
+      4,
+      1,
+      2
+    ]
+  }
+},
+{
+  "model": "product.phoneproduct",
+  "pk": 10,
+  "fields": {
+    "name": "Apple iPhone 15 Pro",
+    "description": "Экран:  6.1 \" 1179х2556 пикселей, OLED\r\nПроцессор:  Apple A17 Pro , 6 ядр., 3.78 ГГц\r\nПамять:  ОЗУ 8 ГБ , 256 ГБ\r\nФормат физической SIM-карты:  Nano\r\nРазрешение основного модуля камеры:  48 Мп",
+    "price": "7800.00",
+    "category": 3,
+    "image": "photos/iphone-15-pro-256gb-natural-titanium-telefon-gsm-apple-mtuf3j-a-1_600.jpg",
+    "quantity": 1,
+    "slug": "apple-iphone-15-pro",
+    "tag": [
+      4,
+      3
+    ]
+  }
+},
+{
+  "model": "product.phoneproduct",
+  "pk": 11,
+  "fields": {
+    "name": "APPLE iPhone 14",
+    "description": "Экран:  6.1 \" 1170x2532 пикселей, OLED\r\nПроцессор:  Apple A15 Bionic , 6 ядр., 3.23 ГГц\r\nПамять:  ОЗУ 6 ГБ , 128 ГБ\r\nФормат физической SIM-карты:  Nano\r\nРазрешение основного модуля камеры:  12 Мп",
+    "price": "4580.99",
+    "category": 3,
+    "image": "photos/iphone-14-128gb-starlight-telefon-gsm-apple-mpur3hn-a-1_600.jpg",
+    "quantity": 0,
+    "slug": "apple-iphone-14",
+    "tag": []
+  }
+},
+{
+  "model": "product.phoneproduct",
+  "pk": 12,
+  "fields": {
+    "name": "APPLE iPhone 11 Pro",
+    "description": "Экран:  6.1 \" 1170x2532 пикселей, OLED\r\nПроцессор:  Apple A15 Bionic , 6 ядр.\r\nПамять:  ОЗУ 4 ГБ , 128 ГБ\r\nФормат физической SIM-карты:  Nano\r\nРазрешение основного модуля камеры:  12 Мп",
+    "price": "3219.99",
+    "category": 3,
+    "image": "photos/-1_600_1.jpg",
+    "quantity": 1,
+    "slug": "apple-iphone-11-pro",
+    "tag": [
+      4,
+      2
+    ]
+  }
+},
+{
+  "model": "product.phoneproduct",
+  "pk": 13,
+  "fields": {
+    "name": "Samsung Galaxy S23 FE SM-S711B",
+    "description": "Экран:  6.4 \" 1080x2340 пикселей, Dynamic AMOLED 2X\r\nПроцессор:  Exynos 2200 , 8 ядр., 2.8 ГГц\r\nПамять:  ОЗУ 8 ГБ , 128 ГБ\r\nФормат физической SIM-карты:  Nano\r\nРазрешение основного модуля камеры:  50 Мп",
+    "price": "3289.99",
+    "category": 4,
+    "image": "photos/sm-s711b-seryy-128gb-telefon-gsm-samsung-galaxy-s23-fe-1_600.jpg",
+    "quantity": 4,
+    "slug": "samsung-galaxy-s23-fe-sm-s711b",
+    "tag": [
+      1,
+      3
+    ]
+  }
+},
+{
+  "model": "product.phoneproduct",
+  "pk": 14,
+  "fields": {
+    "name": "Samsung Galaxy A05s SM-A057F",
+    "description": "Экран:  6.7 \" 1080x2400 пикселей, PLS\r\nПроцессор:  Qualcomm Snapdragon 680 , 8 ядр., 2.4 ГГц\r\nПамять:  ОЗУ 4 ГБ , 128 ГБ\r\nФормат физической SIM-карты:  Nano\r\nРазрешение основного модуля камеры:  50 Мп",
+    "price": "2100.00",
+    "category": 4,
+    "image": "photos/sm-a057f-fioletovyy-128gb-telefon-gsm-samsung-galaxy-a057-lte-1_600.jpg",
+    "quantity": 2,
+    "slug": "samsung-galaxy-a05s-sm-a057f",
+    "tag": []
+  }
+},
+{
+  "model": "product.phoneproduct",
+  "pk": 15,
+  "fields": {
+    "name": "HONOR X8b (LLY-LX1)",
+    "description": "Экран:  6.7 \" 1080x2412 пикселей, AMOLED\r\nПроцессор:  Qualcomm Snapdragon 680 , 8 ядр., 2.4 ГГц\r\nПамять:  ОЗУ 8 ГБ , 256 ГБ\r\nФормат физической SIM-карты:  Nano\r\nРазрешение основного модуля камеры:  108 Мп",
+    "price": "2412.25",
+    "category": 5,
+    "image": "photos/x8b-lly-lx1-8gb-256gb-glamorous-green-telefon-gsm-honor-1_600.jpg",
+    "quantity": 3,
+    "slug": "honor-x8b-lly-lx1",
+    "tag": [
+      4
+    ]
+  }
+},
+{
+  "model": "product.phoneproduct",
+  "pk": 16,
+  "fields": {
+    "name": "HONOR 90",
+    "description": "Экран:  6.7 \" 1200x2664 пикселей, AMOLED\r\nПроцессор:  Qualcomm Snapdragon 7 Gen1 Accelerated Edition , 8 ядр., 2.5 ГГц\r\nПамять:  ОЗУ 8 ГБ , 256 ГБ\r\nФормат физической SIM-карты:  Nano\r\nРазрешение основного модуля камеры:  200 Мп",
+    "price": "3219.99",
+    "category": 5,
+    "image": "photos/90-rea-nx9-8gb-256gb-peacock-blue-telefon-gsm-honor-1_600.jpg",
+    "quantity": 4,
+    "slug": "honor-90",
+    "tag": [
+      2
+    ]
+  }
+},
+{
+  "model": "product.phoneproduct",
+  "pk": 17,
+  "fields": {
+    "name": "Huawei nova 11 FOA-LX9",
+    "description": "Экран:  6.7 \" 1084х2412 пикселей, OLED\r\nПроцессор:  Qualcomm Snapdragon 778G , 8 ядр., 2.4 ГГц\r\nПамять:  ОЗУ 8 ГБ , 256 ГБ\r\nФормат физической SIM-карты:  Nano\r\nРазрешение основного модуля камеры:  50 Мп",
+    "price": "1199.00",
+    "category": 6,
+    "image": "photos/nova-11-foa-lx9-black-telefon-gsm-huawei-1_600.jpg",
+    "quantity": 5,
+    "slug": "huawei-nova-11-foa-lx9",
+    "tag": [
+      3
+    ]
+  }
+},
+{
+  "model": "product.phoneproduct",
+  "pk": 18,
+  "fields": {
+    "name": "Huawei nova Y61 EVE-LX9N",
+    "description": "Экран:  6.52 \" 720x1600 пикселей, IPS\r\nПроцессор:  HiSilicon Kirin 710A , 8 ядр., 2 ГГц\r\nПамять:  ОЗУ 4 ГБ , 128 ГБ\r\nФормат физической SIM-карты:  Nano\r\nРазрешение основного модуля камеры:  50 Мп",
+    "price": "299.00",
+    "category": 6,
+    "image": "photos/nova-y61-4gb-128gb-eve-lx9n-midnight-black-telefon-gsm-huawei-1_600.jpg",
+    "quantity": 3,
+    "slug": "huawei-nova-y61-eve-lx9n",
+    "tag": [
+      3,
+      2
+    ]
+  }
+},
+{
+  "model": "product.phoneproduct",
+  "pk": 19,
+  "fields": {
+    "name": "Huawei nova 10 SE (BNE-LX1)",
+    "description": "Экран:  6.67 \" 1080x2400 пикселей, OLED\r\nПроцессор:  Qualcomm Snapdragon 680 , 8 ядр., 2.4 ГГц\r\nПамять:  ОЗУ 8 ГБ , 128 ГБ\r\nФормат физической SIM-карты:  Nano\r\nРазрешение основного модуля камеры:  108 Мп",
+    "price": "699.00",
+    "category": 6,
+    "image": "photos/-1_600_mu5Z49i.jpg",
+    "quantity": 2,
+    "slug": "huawei-nova-10-se-bne-lx1",
+    "tag": [
+      2
+    ]
+  }
+},
+{
+  "model": "product.phoneproduct",
+  "pk": 20,
+  "fields": {
+    "name": "Huawei nova Y91 STG-LX1",
+    "description": "Экран:  6.52 \" 720x1600 пикселей, IPS\r\nПроцессор:  HiSilicon Kirin 710A , 8 ядр., 2 ГГц\r\nПамять:  ОЗУ 4 ГБ , 128 ГБ\r\nФормат физической SIM-карты:  Nano\r\nРазрешение основного модуля камеры:  50 Мп",
+    "price": "749.00",
+    "category": 6,
+    "image": "photos/nova-y91-256gb-stg-lx1-starry-black-telefon-gsm-huawei-1_600.jpg",
+    "quantity": 6,
+    "slug": "huawei-nova-u91-stg-lx1",
+    "tag": [
+      3
+    ]
+  }
+},
+{
+  "model": "product.phoneproduct",
+  "pk": 21,
+  "fields": {
+    "name": "Huawei nova 11 Pro GOA-LX9",
+    "description": "Экран:  6.78 \" 1200x2652 пикселей, OLED\r\nПроцессор:  Qualcomm Snapdragon 778G , 8 ядр., 2.4 ГГц\r\nПамять:  ОЗУ 8 ГБ , 256 ГБ\r\nФормат физической SIM-карты:  Nano\r\nРазрешение основного модуля камеры:  50 Мп",
+    "price": "1599.00",
+    "category": 6,
+    "image": "photos/nova-11-pro-goa-lx9-green-telefon-gsm-huawei-1_600.jpg",
+    "quantity": 2,
+    "slug": "huawei-nova-11-pro-goa-lx9",
+    "tag": [
+      4
+    ]
+  }
+},
+{
+  "model": "product.phoneproduct",
+  "pk": 22,
+  "fields": {
+    "name": "Xiaomi Redmi Note 12 Pro+",
+    "description": "Экран:  6.67 \" 1080x2400 пикселей, AMOLED\r\nПроцессор:  MediaTek Dimensity 1080 , 8 ядр., 2.6 ГГц\r\nПамять:  ОЗУ 8 ГБ , 256 ГБ\r\nФормат физической SIM-карты:  Nano\r\nРазрешение основного модуля камеры:  200 Мп",
+    "price": "1031.00",
+    "category": 1,
+    "image": "photos/redmi-note-12-pro-plus-5g-8gb-256gb-midnight-black-eu-telefon-gsm-xiaomi-1_600.jpg",
+    "quantity": 4,
+    "slug": "xiaomi-redmi-note-12-pro",
+    "tag": [
+      3
+    ]
+  }
+},
+{
+  "model": "product.phoneproduct",
+  "pk": 23,
+  "fields": {
+    "name": "Xiaomi Redmi Note 12",
+    "description": "Экран:  6.67 \" 1080x2400 пикселей, AMOLED\r\nПроцессор:  Qualcomm Snapdragon 685 , 8 ядр., 2.8 ГГц\r\nПамять:  ОЗУ 6 ГБ , 128 ГБ\r\nФормат физической SIM-карты:  Nano\r\nРазрешение основного модуля камеры:  50 Мп",
+    "price": "583.00",
+    "category": 1,
+    "image": "photos/redmi-note-12-6gb-128gb-nfc-onyx-gray-ru-telefon-gsm-xiaomi-1_600.jpg",
+    "quantity": 2,
+    "slug": "xiaomi-redmi-note-12",
+    "tag": [
+      3
+    ]
+  }
+},
+{
+  "model": "product.phoneproduct",
+  "pk": 24,
+  "fields": {
+    "name": "Realme 12 Pro+ 5G RMX3840",
+    "description": "Экран:  6.7 \" 1080x2412 пикселей, AMOLED\r\nПроцессор:  Qualcomm Snapdragon 7s Gen2 , 8 ядр., 2.4 ГГц\r\nПамять:  ОЗУ 12 ГБ , 512 ГБ\r\nФормат физической SIM-карты:  Nano\r\nРазрешение основного модуля камеры:  50 Мп",
+    "price": "1899.00",
+    "category": 2,
+    "image": "photos/-1_600_1_6qEIdLC.jpg",
+    "quantity": 4,
+    "slug": "realme-12-pro-5g-rmx3840",
+    "tag": [
+      4,
+      1
+    ]
+  }
+},
+{
+  "model": "product.phoneproduct",
+  "pk": 25,
+  "fields": {
+    "name": "Realme Note 50",
+    "description": "Экран:  6.74 \" 720x1600 пикселей, IPS\r\nПроцессор:  UniSoC Tiger T612 , 8 ядр., 1.82 ГГц\r\nПамять:  ОЗУ 4 ГБ , 128 ГБ\r\nФормат физической SIM-карты:  Nano\r\nРазрешение основного модуля камеры:  13 Мп",
+    "price": "329.00",
+    "category": 2,
+    "image": "photos/note-50-rmx3834-4gb-128gb-midnight-black-telefon-gsm-realme-1_600.jpg",
+    "quantity": 5,
+    "slug": "realme-note-50",
+    "tag": []
+  }
+},
+{
+  "model": "product.phoneproduct",
+  "pk": 26,
+  "fields": {
+    "name": "Realme 11 Pro 5G",
+    "description": "Экран:  6.7 \" 1080x2412 пикселей, AMOLED\r\nПроцессор:  MediaTek Dimensity 7050 , 8 ядр., 2.6 ГГц\r\nПамять:  ОЗУ 8 ГБ , 256 ГБ\r\nФормат физической SIM-карты:  Nano\r\nРазрешение основного модуля камеры:  100 Мп",
+    "price": "1099.00",
+    "category": 2,
+    "image": "photos/11-pro-5g-rmx3771-8gb-256gb-black-telefon-gsm-realme-1_600.jpg",
+    "quantity": 5,
+    "slug": "realme-11-pro-5g",
+    "tag": [
+      1,
+      3,
+      2
+    ]
+  }
+},
+{
+  "model": "product.phoneproduct",
+  "pk": 27,
+  "fields": {
+    "name": "Realme C67 (RMX3890)",
+    "description": "Экран:  6.72 \" 1080x2400 пикселей, IPS\r\nПроцессор:  Qualcomm Snapdragon 685 , 8 ядр., 2.8 ГГц\r\nПамять:  ОЗУ 8 ГБ , 256 ГБ\r\nФормат физической SIM-карты:  Nano\r\nРазрешение основного модуля камеры:  108 Мп",
+    "price": "799.00",
+    "category": 2,
+    "image": "photos/note-50-rmx3834-4gb-128gb-midnight-black-telefon-gsm-realme-1_600_xSXYhKd.jpg",
+    "quantity": 3,
+    "slug": "realme-c67-rmx3890",
+    "tag": [
+      4,
+      1
+    ]
+  }
+}
+]

@@ -2,14 +2,24 @@
 {% load static %}
 {% block content %}
     {% include 'includes/menu.html' %}
-    <form action="" method="POST" enctype="multipart/form-data">
-        {% csrf_token %}
-        <div class="form-errors">{{ form.non_field_errors }}</div>
-        {% for f in form %}
-            <p><label class="form-label" for="{{ f.id_for_label }}">{{ f.label }}</label>{{ f }}</p>
-        {% endfor %}
-        <p>
-            <button type="submit">ADD</button>
-        </p>
-    </form>
+
+    <div class="form-container" style="margin: 15px">
+        <h2>Add a New Phone</h2>
+        <form action="" method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div class="form-errors">
+                {{ form.non_field_errors }}
+            </div>
+            {% for f in form %}
+                <div class="form-group">
+                    <label class="form-label" for="{{ f.id_for_label }}">{{ f.label }}</label>
+                    {{ f }}
+                    {{ f.errors }}
+                </div>
+            {% endfor %}
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary">Add</button>
+            </div>
+        </form>
+    </div>
 {% endblock %}

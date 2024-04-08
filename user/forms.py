@@ -4,8 +4,8 @@ from django.contrib.auth.forms import AuthenticationForm, UserCreationForm, Pass
 
 
 class UserForm(AuthenticationForm):
-    username = forms.CharField(label='Login', widget=forms.TextInput(attrs={'class': 'form-input'}))
-    password = forms.CharField(label='Password', widget=forms.PasswordInput(attrs={'class': 'form-input'}))
+    username = forms.CharField(label='Login', widget=forms.TextInput(attrs={'class': 'form-control'}))
+    password = forms.CharField(label='Password', widget=forms.PasswordInput(attrs={'class': 'form-control'}))
 
     class Meta:
         model = get_user_model()
@@ -61,3 +61,12 @@ class ChangePasswordForm(PasswordChangeForm):
     old_password = forms.CharField(label='Old Password', widget=forms.PasswordInput(attrs={'class': 'form-change'}))
     password1 = forms.CharField(label='Password', widget=forms.PasswordInput(attrs={'class': 'form-change'}))
     password2 = forms.CharField(label='Password again', widget=forms.PasswordInput(attrs={'class': 'form-change'}))
+
+    class Meta:
+        model = get_user_model()
+        fields = ['old_password', 'password1', 'password2']
+        labels = {
+            'old_password': 'Old password',
+            'password1': 'New password',
+            'password2': 'Repeat the password',
+        }
