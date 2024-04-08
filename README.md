@@ -1,4 +1,5 @@
 **Phone store**
+
 A Phone Store built using HTML, CSS, Python, Django, Boostrap and PostgreSQL.
 
 Phone Store contains more features like:
